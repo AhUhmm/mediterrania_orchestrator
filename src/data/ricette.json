@@ -1,0 +1,4588 @@
+{
+  "metadata": {
+    "versione": "1.0",
+    "data_generazione": "2024-10-31",
+    "tipo_contenuto": "database_pasti",
+    "totale_ricette": {
+      "colazioni": 25,
+      "pranzi": 35,
+      "cene": 35,
+      "spuntini": 20
+    },
+    "variazioni_dietetiche": {
+      "standard": true,
+      "vegetariano": true,
+      "vegano": true,
+      "senza_glutine": true,
+      "adatto_diabetici": true,
+      "basso_sodio": true
+    },
+    "disponibilita_stagionale": {
+      "autunno": [
+        "zucca",
+        "funghi",
+        "castagne",
+        "uva",
+        "pere",
+        "melograno",
+        "cavolo",
+        "broccoli",
+        "cavolfiore",
+        "cavolo nero",
+        "cavoletti di bruxelles",
+        "patate dolci",
+        "mele",
+        "fichi",
+        "cachi"
+      ],
+      "inverno": [
+        "agrumi",
+        "cavolo nero",
+        "cavolfiore",
+        "broccoli",
+        "ortaggi a radice",
+        "finocchio",
+        "cicoria",
+        "radicchio",
+        "arance",
+        "mandarini",
+        "limoni",
+        "pompelmo",
+        "rape",
+        "pastinaca"
+      ],
+      "primavera": [
+        "asparagi",
+        "piselli",
+        "carciofi",
+        "fragole",
+        "spinaci",
+        "fave",
+        "fagiolini",
+        "lattuga",
+        "ravanelli",
+        "carote",
+        "ciliegie",
+        "albicocche",
+        "cipollotti",
+        "aglio fresco"
+      ],
+      "estate": [
+        "pomodori",
+        "melanzane",
+        "peperoni",
+        "zucchine",
+        "frutti di bosco",
+        "pesche",
+        "anguria",
+        "melone",
+        "cetrioli",
+        "fagiolini",
+        "mais",
+        "basilico",
+        "erbe aromatiche",
+        "prugne",
+        "fichi"
+      ]
+    },
+    "intervalli_nutrizionali": {
+      "colazione": {
+        "calorie": { "min": 250, "max": 400 },
+        "proteine": { "min": 8, "max": 20 },
+        "carboidrati": { "min": 30, "max": 60 },
+        "grassi": { "min": 6, "max": 18 }
+      },
+      "pranzo_cena": {
+        "calorie": { "min": 400, "max": 600 },
+        "proteine": { "min": 20, "max": 35 },
+        "carboidrati": { "min": 45, "max": 75 },
+        "grassi": { "min": 12, "max": 25 }
+      },
+      "spuntini": {
+        "calorie": { "min": 150, "max": 200 },
+        "proteine": { "min": 5, "max": 10 },
+        "carboidrati": { "min": 15, "max": 25 },
+        "grassi": { "min": 5, "max": 12 }
+      }
+    },
+    "orari_pasti": {
+      "colazione": "7:00-9:00",
+      "spuntino_mattina": "10:30-11:30",
+      "pranzo": "12:30-14:30",
+      "spuntino_pomeriggio": "16:30-17:30",
+      "cena": "19:30-21:30"
+    }
+  },
+  "colazioni": [
+    {
+      "id_pasto": "COL001",
+      "nome": "Porridge di avena con frutta fresca",
+      "ingredienti": [
+        { "nome": "fiocchi di avena", "quantita": 30, "unita": "g" },
+        { "nome": "latte vegetale", "quantita": 150, "unita": "ml" },
+        { "nome": "frutta di stagione", "quantita": 100, "unita": "g" },
+        { "nome": "frutta secca mista", "quantita": 10, "unita": "g" },
+        { "nome": "cannella", "quantita": 1, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 280,
+        "proteine": 8,
+        "carboidrati": 45,
+        "grassi": 9,
+        "fibre": 5,
+        "sodio": 50
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 10,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL002",
+      "nome": "Toast integrale con uovo e avocado",
+      "ingredienti": [
+        { "nome": "pane integrale", "quantita": 60, "unita": "g" },
+        { "nome": "uovo", "quantita": 1, "unita": "unità" },
+        { "nome": "avocado", "quantita": 50, "unita": "g" },
+        { "nome": "olio extravergine di oliva", "quantita": 5, "unita": "ml" },
+        { "nome": "pepe nero", "quantita": 1, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 320,
+        "proteine": 14,
+        "carboidrati": 30,
+        "grassi": 18,
+        "fibre": 6,
+        "sodio": 120
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pane_senza_glutine",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 10,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL003",
+      "nome": "Yogurt greco con frutti di bosco e semi",
+      "ingredienti": [
+        { "nome": "yogurt greco", "quantita": 150, "unita": "g" },
+        { "nome": "frutti di bosco misti", "quantita": 100, "unita": "g" },
+        { "nome": "semi di zucca", "quantita": 10, "unita": "g" },
+        { "nome": "semi di chia", "quantita": 5, "unita": "g" },
+        { "nome": "miele", "quantita": 5, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 265,
+        "proteine": 15,
+        "carboidrati": 25,
+        "grassi": 12,
+        "fibre": 4,
+        "sodio": 45
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": "senza_miele",
+        "ipertesi": true
+      },
+      "tempo_preparazione": 5,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL004",
+      "nome": "Pancake integrali con frutta",
+      "ingredienti": [
+        { "nome": "farina integrale", "quantita": 40, "unita": "g" },
+        { "nome": "uovo", "quantita": 1, "unita": "unità" },
+        { "nome": "latte vegetale", "quantita": 100, "unita": "ml" },
+        { "nome": "frutta di stagione", "quantita": 100, "unita": "g" },
+        { "nome": "sciroppo d'acero", "quantita": 10, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 310,
+        "proteine": 12,
+        "carboidrati": 48,
+        "grassi": 8,
+        "fibre": 5,
+        "sodio": 80
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": false,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_farina_senza_glutine",
+        "diabetici": "senza_sciroppo",
+        "ipertesi": true
+      },
+      "tempo_preparazione": 15,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL005",
+      "nome": "Frullato proteico con frutta",
+      "ingredienti": [
+        { "nome": "banana", "quantita": 100, "unita": "g" },
+        { "nome": "proteine in polvere", "quantita": 20, "unita": "g" },
+        { "nome": "latte vegetale", "quantita": 100, "unita": "ml" },
+        { "nome": "granola", "quantita": 20, "unita": "g" },
+        { "nome": "frutti di bosco", "quantita": 50, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 295,
+        "proteine": 20,
+        "carboidrati": 40,
+        "grassi": 7,
+        "fibre": 6,
+        "sodio": 100
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_granola_senza_glutine",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 10,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL006",
+      "nome": "Overnight oats alla mela e cannella",
+      "ingredienti": [
+        { "nome": "fiocchi d'avena", "quantita": 40, "unita": "g" },
+        { "nome": "latte vegetale", "quantita": 120, "unita": "ml" },
+        { "nome": "mela", "quantita": 100, "unita": "g" },
+        { "nome": "cannella", "quantita": 2, "unita": "g" },
+        { "nome": "noci", "quantita": 15, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 305,
+        "proteine": 9,
+        "carboidrati": 48,
+        "grassi": 11,
+        "fibre": 7,
+        "sodio": 40
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 5,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL007",
+      "nome": "Frittata con verdure",
+      "ingredienti": [
+        { "nome": "uova", "quantita": 2, "unita": "unità" },
+        { "nome": "verdure miste", "quantita": 100, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 5, "unita": "ml" },
+        { "nome": "pane integrale", "quantita": 30, "unita": "g" },
+        { "nome": "erbe aromatiche", "quantita": 2, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 340,
+        "proteine": 18,
+        "carboidrati": 22,
+        "grassi": 16,
+        "fibre": 3,
+        "sodio": 150
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pane_senza_glutine",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 15,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL008",
+      "nome": "Bowl di quinoa dolce",
+      "ingredienti": [
+        { "nome": "quinoa", "quantita": 40, "unita": "g" },
+        { "nome": "latte vegetale", "quantita": 150, "unita": "ml" },
+        { "nome": "frutta di stagione", "quantita": 100, "unita": "g" },
+        { "nome": "mandorle", "quantita": 15, "unita": "g" },
+        { "nome": "cannella", "quantita": 1, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 315,
+        "proteine": 11,
+        "carboidrati": 42,
+        "grassi": 13,
+        "fibre": 6,
+        "sodio": 30
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 20,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL009",
+      "nome": "Bruschetta con hummus e pomodorini",
+      "ingredienti": [
+        { "nome": "pane integrale", "quantita": 60, "unita": "g" },
+        { "nome": "hummus", "quantita": 50, "unita": "g" },
+        { "nome": "pomodorini", "quantita": 80, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 5, "unita": "ml" },
+        { "nome": "origano", "quantita": 1, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 290,
+        "proteine": 10,
+        "carboidrati": 38,
+        "grassi": 12,
+        "fibre": 6,
+        "sodio": 180
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["estate"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pane_senza_glutine",
+        "diabetici": true,
+        "ipertesi": "ridurre_hummus"
+      },
+      "tempo_preparazione": 5,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL010",
+      "nome": "Pancake proteici di ceci",
+      "ingredienti": [
+        { "nome": "farina di ceci", "quantita": 50, "unita": "g" },
+        { "nome": "banana", "quantita": 60, "unita": "g" },
+        { "nome": "latte vegetale", "quantita": 100, "unita": "ml" },
+        { "nome": "sciroppo d'acero", "quantita": 10, "unita": "g" },
+        { "nome": "frutti di bosco", "quantita": 50, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 320,
+        "proteine": 14,
+        "carboidrati": 45,
+        "grassi": 8,
+        "fibre": 7,
+        "sodio": 60
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": "senza_sciroppo",
+        "ipertesi": true
+      },
+      "tempo_preparazione": 15,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL011",
+      "nome": "Yogurt con granola fatta in casa",
+      "ingredienti": [
+        { "nome": "yogurt naturale", "quantita": 150, "unita": "g" },
+        { "nome": "granola fatta in casa", "quantita": 30, "unita": "g" },
+        { "nome": "miele", "quantita": 5, "unita": "g" },
+        { "nome": "frutta di stagione", "quantita": 100, "unita": "g" },
+        { "nome": "mix di semi", "quantita": 10, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 295,
+        "proteine": 12,
+        "carboidrati": 42,
+        "grassi": 10,
+        "fibre": 5,
+        "sodio": 70
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_granola_senza_glutine",
+        "diabetici": "senza_miele",
+        "ipertesi": true
+      },
+      "tempo_preparazione": 5,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL012",
+      "nome": "Panino proteico con tofu strapazzato",
+      "ingredienti": [
+        { "nome": "pane integrale", "quantita": 60, "unita": "g" },
+        { "nome": "tofu", "quantita": 100, "unita": "g" },
+        { "nome": "spinaci", "quantita": 30, "unita": "g" },
+        { "nome": "lievito alimentare", "quantita": 5, "unita": "g" },
+        { "nome": "curcuma", "quantita": 1, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 320,
+        "proteine": 20,
+        "carboidrati": 35,
+        "grassi": 12,
+        "fibre": 6,
+        "sodio": 140
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pane_senza_glutine",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 15,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL013",
+      "nome": "Frullato verde proteico",
+      "ingredienti": [
+        { "nome": "spinaci", "quantita": 50, "unita": "g" },
+        { "nome": "banana", "quantita": 100, "unita": "g" },
+        { "nome": "proteine di pisello", "quantita": 20, "unita": "g" },
+        { "nome": "latte di mandorla", "quantita": 200, "unita": "ml" },
+        { "nome": "semi di chia", "quantita": 10, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 275,
+        "proteine": 22,
+        "carboidrati": 35,
+        "grassi": 6,
+        "fibre": 8,
+        "sodio": 50
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 5,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL014",
+      "nome": "Ciotola di riso integrale dolce",
+      "ingredienti": [
+        { "nome": "riso integrale", "quantita": 40, "unita": "g" },
+        { "nome": "latte vegetale", "quantita": 150, "unita": "ml" },
+        { "nome": "mela", "quantita": 100, "unita": "g" },
+        { "nome": "cannella", "quantita": 1, "unita": "g" },
+        { "nome": "frutta secca mista", "quantita": 15, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 310,
+        "proteine": 8,
+        "carboidrati": 50,
+        "grassi": 10,
+        "fibre": 5,
+        "sodio": 35
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 25,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL015",
+      "nome": "Wrap con uova e avocado",
+      "ingredienti": [
+        { "nome": "piadina integrale", "quantita": 60, "unita": "g" },
+        { "nome": "uova", "quantita": 2, "unita": "unità" },
+        { "nome": "avocado", "quantita": 50, "unita": "g" },
+        { "nome": "pomodoro", "quantita": 40, "unita": "g" },
+        { "nome": "erbe aromatiche", "quantita": 2, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 385,
+        "proteine": 19,
+        "carboidrati": 35,
+        "grassi": 20,
+        "fibre": 8,
+        "sodio": 160
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_wrap_senza_glutine",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 10,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL016",
+      "nome": "Budino di semi di chia",
+      "ingredienti": [
+        { "nome": "semi di chia", "quantita": 30, "unita": "g" },
+        { "nome": "latte vegetale", "quantita": 200, "unita": "ml" },
+        { "nome": "frutti di bosco", "quantita": 100, "unita": "g" },
+        { "nome": "burro di mandorle", "quantita": 15, "unita": "g" },
+        { "nome": "estratto di vaniglia", "quantita": 2, "unita": "gocce" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 290,
+        "proteine": 10,
+        "carboidrati": 32,
+        "grassi": 15,
+        "fibre": 12,
+        "sodio": 40
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 5,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL017",
+      "nome": "Toast con ricotta e fichi",
+      "ingredienti": [
+        { "nome": "pane integrale", "quantita": 60, "unita": "g" },
+        { "nome": "ricotta", "quantita": 60, "unita": "g" },
+        { "nome": "fichi", "quantita": 80, "unita": "g" },
+        { "nome": "miele", "quantita": 5, "unita": "g" },
+        { "nome": "noci", "quantita": 10, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 340,
+        "proteine": 14,
+        "carboidrati": 45,
+        "grassi": 12,
+        "fibre": 5,
+        "sodio": 160
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["estate", "autunno"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pane_senza_glutine",
+        "diabetici": "senza_miele",
+        "ipertesi": true
+      },
+      "tempo_preparazione": 5,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL018",
+      "nome": "Ciotola di grano saraceno dolce",
+      "ingredienti": [
+        { "nome": "grano saraceno", "quantita": 40, "unita": "g" },
+        { "nome": "latte vegetale", "quantita": 150, "unita": "ml" },
+        { "nome": "pera", "quantita": 100, "unita": "g" },
+        { "nome": "nocciole", "quantita": 15, "unita": "g" },
+        { "nome": "cannella", "quantita": 1, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 305,
+        "proteine": 9,
+        "carboidrati": 48,
+        "grassi": 10,
+        "fibre": 7,
+        "sodio": 35
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 20,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL019",
+      "nome": "Bruschetta mediterranea",
+      "ingredienti": [
+        { "nome": "pane integrale", "quantita": 60, "unita": "g" },
+        { "nome": "pomodorini", "quantita": 100, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "basilico fresco", "quantita": 5, "unita": "g" },
+        { "nome": "aglio", "quantita": 1, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 265,
+        "proteine": 8,
+        "carboidrati": 38,
+        "grassi": 11,
+        "fibre": 4,
+        "sodio": 150
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["estate"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pane_senza_glutine",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 10,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL020",
+      "nome": "Frullato energetico con datteri",
+      "ingredienti": [
+        { "nome": "banana", "quantita": 100, "unita": "g" },
+        { "nome": "datteri", "quantita": 20, "unita": "g" },
+        { "nome": "latte di mandorla", "quantita": 200, "unita": "ml" },
+        { "nome": "crema di mandorle", "quantita": 15, "unita": "g" },
+        { "nome": "cacao amaro", "quantita": 5, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 310,
+        "proteine": 7,
+        "carboidrati": 52,
+        "grassi": 11,
+        "fibre": 6,
+        "sodio": 45
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": false,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": "senza_datteri",
+        "ipertesi": true
+      },
+      "tempo_preparazione": 5,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL021",
+      "nome": "Mini frittate al forno con verdure",
+      "ingredienti": [
+        { "nome": "uova", "quantita": 2, "unita": "unità" },
+        { "nome": "verdure miste", "quantita": 100, "unita": "g" },
+        { "nome": "ricotta", "quantita": 30, "unita": "g" },
+        { "nome": "erbe aromatiche", "quantita": 2, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 5, "unita": "ml" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 295,
+        "proteine": 20,
+        "carboidrati": 8,
+        "grassi": 22,
+        "fibre": 2,
+        "sodio": 140
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 25,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL022",
+      "nome": "Crostini con hummus di barbabietola",
+      "ingredienti": [
+        { "nome": "pane integrale", "quantita": 60, "unita": "g" },
+        { "nome": "hummus di barbabietola", "quantita": 60, "unita": "g" },
+        { "nome": "cetriolo", "quantita": 50, "unita": "g" },
+        { "nome": "mix di semi", "quantita": 10, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 5, "unita": "ml" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 285,
+        "proteine": 10,
+        "carboidrati": 40,
+        "grassi": 12,
+        "fibre": 6,
+        "sodio": 170
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pane_senza_glutine",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 10,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL023",
+      "nome": "Porridge di miglio con mela e cannella",
+      "ingredienti": [
+        { "nome": "miglio", "quantita": 40, "unita": "g" },
+        { "nome": "latte vegetale", "quantita": 200, "unita": "ml" },
+        { "nome": "mela", "quantita": 100, "unita": "g" },
+        { "nome": "mandorle", "quantita": 15, "unita": "g" },
+        { "nome": "cannella", "quantita": 1, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 315,
+        "proteine": 9,
+        "carboidrati": 52,
+        "grassi": 10,
+        "fibre": 6,
+        "sodio": 40
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 20,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL024",
+      "nome": "Sandwich con tempeh e avocado",
+      "ingredienti": [
+        { "nome": "pane integrale", "quantita": 60, "unita": "g" },
+        { "nome": "tempeh", "quantita": 75, "unita": "g" },
+        { "nome": "avocado", "quantita": 50, "unita": "g" },
+        { "nome": "lattuga", "quantita": 20, "unita": "g" },
+        { "nome": "pomodoro", "quantita": 40, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 380,
+        "proteine": 19,
+        "carboidrati": 42,
+        "grassi": 18,
+        "fibre": 8,
+        "sodio": 160
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pane_senza_glutine",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 15,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "COL025",
+      "nome": "Crêpes di ceci con frutta",
+      "ingredienti": [
+        { "nome": "farina di ceci", "quantita": 50, "unita": "g" },
+        { "nome": "latte vegetale", "quantita": 120, "unita": "ml" },
+        { "nome": "frutta di stagione", "quantita": 100, "unita": "g" },
+        { "nome": "sciroppo d'acero", "quantita": 10, "unita": "g" },
+        { "nome": "scorza di limone", "quantita": 1, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 295,
+        "proteine": 12,
+        "carboidrati": 48,
+        "grassi": 7,
+        "fibre": 6,
+        "sodio": 45
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": "senza_sciroppo",
+        "ipertesi": true
+      },
+      "tempo_preparazione": 20,
+      "difficolta": "media",
+      "porzioni": 1
+    }
+  ],
+  "pranzi": [
+    {
+      "id_pasto": "PR001",
+      "nome": "Pasta integrale al pomodoro e legumi",
+      "ingredienti": [
+        { "nome": "pasta integrale", "quantita": 70, "unita": "g" },
+        { "nome": "passata di pomodoro", "quantita": 100, "unita": "g" },
+        { "nome": "lenticchie", "quantita": 60, "unita": "g" },
+        { "nome": "verdure miste", "quantita": 200, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "basilico", "quantita": 5, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 420,
+        "proteine": 18,
+        "carboidrati": 75,
+        "grassi": 8,
+        "fibre": 12,
+        "sodio": 180
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pasta_senza_glutine",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 20,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR002",
+      "nome": "Insalata di quinoa con verdure grigliate",
+      "ingredienti": [
+        { "nome": "quinoa", "quantita": 70, "unita": "g" },
+        { "nome": "verdure grigliate miste", "quantita": 200, "unita": "g" },
+        { "nome": "ceci", "quantita": 60, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "semi misti", "quantita": 10, "unita": "g" },
+        { "nome": "succo di limone", "quantita": 5, "unita": "ml" },
+        { "nome": "prezzemolo", "quantita": 5, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 440,
+        "proteine": 16,
+        "carboidrati": 65,
+        "grassi": 12,
+        "fibre": 10,
+        "sodio": 150
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["primavera", "estate"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 25,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR003",
+      "nome": "Petto di pollo alla griglia con patate al forno",
+      "ingredienti": [
+        { "nome": "petto di pollo", "quantita": 150, "unita": "g" },
+        { "nome": "patate", "quantita": 200, "unita": "g" },
+        { "nome": "verdure miste", "quantita": 200, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "rosmarino", "quantita": 2, "unita": "g" },
+        { "nome": "aglio", "quantita": 2, "unita": "g" },
+        { "nome": "salvia", "quantita": 2, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 480,
+        "proteine": 35,
+        "carboidrati": 45,
+        "grassi": 15,
+        "fibre": 6,
+        "sodio": 200
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": "ridurre_patate",
+        "ipertesi": true
+      },
+      "tempo_preparazione": 35,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR004",
+      "nome": "Zuppa di legumi con farro",
+      "ingredienti": [
+        { "nome": "legumi misti", "quantita": 80, "unita": "g" },
+        { "nome": "farro", "quantita": 50, "unita": "g" },
+        { "nome": "verdure miste", "quantita": 200, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "erbe aromatiche", "quantita": 3, "unita": "g" },
+        { "nome": "pane integrale", "quantita": 30, "unita": "g" },
+        { "nome": "cipolla", "quantita": 30, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 450,
+        "proteine": 20,
+        "carboidrati": 70,
+        "grassi": 12,
+        "fibre": 14,
+        "sodio": 170
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_cereali_senza_glutine",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 40,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR005",
+      "nome": "Filetto di merluzzo al cartoccio con verdure",
+      "ingredienti": [
+        { "nome": "filetto di merluzzo", "quantita": 150, "unita": "g" },
+        { "nome": "verdure di stagione", "quantita": 250, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "limone", "quantita": 1, "unita": "unità" },
+        { "nome": "erbe aromatiche", "quantita": 3, "unita": "g" },
+        { "nome": "riso integrale", "quantita": 60, "unita": "g" },
+        { "nome": "aglio", "quantita": 1, "unita": "spicchio" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 420,
+        "proteine": 32,
+        "carboidrati": 40,
+        "grassi": 14,
+        "fibre": 5,
+        "sodio": 160
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 30,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR006",
+      "nome": "Buddha bowl con tofu e cereali integrali",
+      "ingredienti": [
+        { "nome": "riso integrale", "quantita": 60, "unita": "g" },
+        { "nome": "tofu", "quantita": 150, "unita": "g" },
+        { "nome": "verdure miste", "quantita": 250, "unita": "g" },
+        { "nome": "avocado", "quantita": 50, "unita": "g" },
+        { "nome": "semi di sesamo", "quantita": 10, "unita": "g" },
+        { "nome": "salsa tahini", "quantita": 15, "unita": "g" },
+        { "nome": "germogli", "quantita": 20, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 490,
+        "proteine": 22,
+        "carboidrati": 55,
+        "grassi": 20,
+        "fibre": 12,
+        "sodio": 180
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 25,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR007",
+      "nome": "Insalata di farro con tonno e ceci",
+      "ingredienti": [
+        { "nome": "farro", "quantita": 70, "unita": "g" },
+        { "nome": "tonno al naturale", "quantita": 80, "unita": "g" },
+        { "nome": "ceci", "quantita": 60, "unita": "g" },
+        { "nome": "pomodorini", "quantita": 100, "unita": "g" },
+        { "nome": "olive", "quantita": 20, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "basilico", "quantita": 5, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 460,
+        "proteine": 28,
+        "carboidrati": 55,
+        "grassi": 15,
+        "fibre": 9,
+        "sodio": 190
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["primavera", "estate"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_quinoa",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 20,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR008",
+      "nome": "Pasta di lenticchie con pesto di basilico",
+      "ingredienti": [
+        { "nome": "pasta di lenticchie", "quantita": 70, "unita": "g" },
+        { "nome": "pesto di basilico", "quantita": 30, "unita": "g" },
+        { "nome": "pomodorini", "quantita": 100, "unita": "g" },
+        { "nome": "pinoli", "quantita": 10, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "parmigiano", "quantita": 20, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 470,
+        "proteine": 25,
+        "carboidrati": 50,
+        "grassi": 22,
+        "fibre": 8,
+        "sodio": 200
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["estate"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": "ridurre_parmigiano"
+      },
+      "tempo_preparazione": 15,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR009",
+      "nome": "Cous cous con verdure e ceci",
+      "ingredienti": [
+        { "nome": "cous cous integrale", "quantita": 70, "unita": "g" },
+        { "nome": "ceci", "quantita": 60, "unita": "g" },
+        { "nome": "verdure grigliate", "quantita": 200, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "menta fresca", "quantita": 3, "unita": "g" },
+        { "nome": "succo di limone", "quantita": 5, "unita": "ml" },
+        { "nome": "spezie", "quantita": 2, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 430,
+        "proteine": 16,
+        "carboidrati": 65,
+        "grassi": 12,
+        "fibre": 10,
+        "sodio": 150
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["primavera", "estate"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_quinoa",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 20,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR010",
+      "nome": "Polpette di legumi con insalata",
+      "ingredienti": [
+        { "nome": "legumi misti", "quantita": 120, "unita": "g" },
+        { "nome": "pangrattato", "quantita": 30, "unita": "g" },
+        { "nome": "insalata mista", "quantita": 200, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "erbe aromatiche", "quantita": 3, "unita": "g" },
+        { "nome": "quinoa", "quantita": 50, "unita": "g" },
+        { "nome": "cipolla", "quantita": 30, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 440,
+        "proteine": 20,
+        "carboidrati": 55,
+        "grassi": 15,
+        "fibre": 12,
+        "sodio": 170
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pangrattato_senza_glutine",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 30,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR011",
+      "nome": "Riso integrale con salmone e verdure",
+      "ingredienti": [
+        { "nome": "riso integrale", "quantita": 70, "unita": "g" },
+        { "nome": "salmone fresco", "quantita": 130, "unita": "g" },
+        { "nome": "verdure miste", "quantita": 200, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "zenzero fresco", "quantita": 5, "unita": "g" },
+        { "nome": "semi di sesamo", "quantita": 5, "unita": "g" },
+        { "nome": "salsa di soia", "quantita": 5, "unita": "ml" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 520,
+        "proteine": 32,
+        "carboidrati": 50,
+        "grassi": 22,
+        "fibre": 6,
+        "sodio": 160
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": "senza_salsa_soia"
+      },
+      "tempo_preparazione": 25,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR012",
+      "nome": "Insalata di orzo con tempeh e verdure",
+      "ingredienti": [
+        { "nome": "orzo perlato", "quantita": 70, "unita": "g" },
+        { "nome": "tempeh", "quantita": 100, "unita": "g" },
+        { "nome": "verdure di stagione", "quantita": 250, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "semi di zucca", "quantita": 10, "unita": "g" },
+        { "nome": "succo di limone", "quantita": 5, "unita": "ml" },
+        { "nome": "erbe aromatiche", "quantita": 3, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 450,
+        "proteine": 24,
+        "carboidrati": 58,
+        "grassi": 15,
+        "fibre": 11,
+        "sodio": 140
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["primavera", "estate"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_quinoa",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 30,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR013",
+      "nome": "Zuppa di pesce con crostini integrali",
+      "ingredienti": [
+        { "nome": "pesce misto", "quantita": 150, "unita": "g" },
+        { "nome": "verdure miste", "quantita": 200, "unita": "g" },
+        { "nome": "pane integrale", "quantita": 40, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "aglio", "quantita": 3, "unita": "g" },
+        { "nome": "prezzemolo", "quantita": 3, "unita": "g" },
+        { "nome": "pomodorini", "quantita": 100, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 460,
+        "proteine": 35,
+        "carboidrati": 35,
+        "grassi": 18,
+        "fibre": 5,
+        "sodio": 200
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pane_senza_glutine",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 35,
+      "difficolta": "alta",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR014",
+      "nome": "Poke bowl con tofu marinato",
+      "ingredienti": [
+        { "nome": "riso integrale", "quantita": 70, "unita": "g" },
+        { "nome": "tofu marinato", "quantita": 120, "unita": "g" },
+        { "nome": "edamame", "quantita": 50, "unita": "g" },
+        { "nome": "avocado", "quantita": 50, "unita": "g" },
+        { "nome": "carote", "quantita": 50, "unita": "g" },
+        { "nome": "cetriolo", "quantita": 50, "unita": "g" },
+        { "nome": "olio di sesamo", "quantita": 5, "unita": "ml" },
+        { "nome": "alghe nori", "quantita": 2, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 480,
+        "proteine": 22,
+        "carboidrati": 60,
+        "grassi": 20,
+        "fibre": 10,
+        "sodio": 180
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 25,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR015",
+      "nome": "Insalata di fagioli e tonno",
+      "ingredienti": [
+        { "nome": "fagioli misti", "quantita": 120, "unita": "g" },
+        { "nome": "tonno al naturale", "quantita": 80, "unita": "g" },
+        { "nome": "cipolla rossa", "quantita": 30, "unita": "g" },
+        { "nome": "pomodorini", "quantita": 100, "unita": "g" },
+        { "nome": "insalata mista", "quantita": 100, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "pane integrale", "quantita": 40, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 440,
+        "proteine": 32,
+        "carboidrati": 45,
+        "grassi": 15,
+        "fibre": 12,
+        "sodio": 170
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["primavera", "estate"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pane_senza_glutine",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 15,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR016",
+      "nome": "Pasta integrale al ragù di lenticchie",
+      "ingredienti": [
+        { "nome": "pasta integrale", "quantita": 70, "unita": "g" },
+        { "nome": "lenticchie", "quantita": 80, "unita": "g" },
+        { "nome": "passata di pomodoro", "quantita": 100, "unita": "g" },
+        { "nome": "carota", "quantita": 40, "unita": "g" },
+        { "nome": "sedano", "quantita": 30, "unita": "g" },
+        { "nome": "cipolla", "quantita": 30, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 460,
+        "proteine": 22,
+        "carboidrati": 70,
+        "grassi": 12,
+        "fibre": 14,
+        "sodio": 150
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pasta_senza_glutine",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 30,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR017",
+      "nome": "Bowl di grano saraceno con uovo e verdure",
+      "ingredienti": [
+        { "nome": "grano saraceno", "quantita": 70, "unita": "g" },
+        { "nome": "uova", "quantita": 2, "unita": "unità" },
+        { "nome": "spinaci", "quantita": 100, "unita": "g" },
+        { "nome": "funghi", "quantita": 100, "unita": "g" },
+        { "nome": "carote", "quantita": 50, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "semi di sesamo", "quantita": 5, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 470,
+        "proteine": 24,
+        "carboidrati": 55,
+        "grassi": 18,
+        "fibre": 8,
+        "sodio": 160
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 25,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR018",
+      "nome": "Burger di ceci con patate dolci",
+      "ingredienti": [
+        { "nome": "ceci", "quantita": 120, "unita": "g" },
+        { "nome": "patata dolce", "quantita": 150, "unita": "g" },
+        { "nome": "insalata mista", "quantita": 100, "unita": "g" },
+        { "nome": "panino integrale", "quantita": 60, "unita": "g" },
+        { "nome": "avocado", "quantita": 30, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "spezie", "quantita": 3, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 490,
+        "proteine": 18,
+        "carboidrati": 65,
+        "grassi": 16,
+        "fibre": 12,
+        "sodio": 180
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pane_senza_glutine",
+        "diabetici": "ridurre_patata_dolce",
+        "ipertesi": true
+      },
+      "tempo_preparazione": 35,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR019",
+      "nome": "Insalata di mare con farro",
+      "ingredienti": [
+        { "nome": "frutti di mare misti", "quantita": 150, "unita": "g" },
+        { "nome": "farro", "quantita": 60, "unita": "g" },
+        { "nome": "pomodorini", "quantita": 100, "unita": "g" },
+        { "nome": "sedano", "quantita": 30, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "succo di limone", "quantita": 10, "unita": "ml" },
+        { "nome": "prezzemolo", "quantita": 5, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 450,
+        "proteine": 32,
+        "carboidrati": 48,
+        "grassi": 14,
+        "fibre": 6,
+        "sodio": 200
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["primavera", "estate"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_quinoa",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 30,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR020",
+      "nome": "Zuppa di zucca con crostini",
+      "ingredienti": [
+        { "nome": "zucca", "quantita": 250, "unita": "g" },
+        { "nome": "patate", "quantita": 100, "unita": "g" },
+        { "nome": "cipolla", "quantita": 40, "unita": "g" },
+        { "nome": "pane integrale", "quantita": 40, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "semi di zucca", "quantita": 10, "unita": "g" },
+        { "nome": "zenzero", "quantita": 5, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 420,
+        "proteine": 12,
+        "carboidrati": 65,
+        "grassi": 14,
+        "fibre": 8,
+        "sodio": 140
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pane_senza_glutine",
+        "diabetici": "ridurre_patate",
+        "ipertesi": true
+      },
+      "tempo_preparazione": 35,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR021",
+      "nome": "Orecchiette con cime di rapa",
+      "ingredienti": [
+        { "nome": "orecchiette integrali", "quantita": 70, "unita": "g" },
+        { "nome": "cime di rapa", "quantita": 200, "unita": "g" },
+        { "nome": "aglio", "quantita": 5, "unita": "g" },
+        { "nome": "peperoncino", "quantita": 2, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "pangrattato", "quantita": 10, "unita": "g" },
+        { "nome": "acciughe", "quantita": 5, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 430,
+        "proteine": 16,
+        "carboidrati": 68,
+        "grassi": 12,
+        "fibre": 9,
+        "sodio": 160
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pasta_senza_glutine",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 25,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR022",
+      "nome": "Riso venere con gamberi e edamame",
+      "ingredienti": [
+        { "nome": "riso venere", "quantita": 70, "unita": "g" },
+        { "nome": "gamberi", "quantita": 120, "unita": "g" },
+        { "nome": "edamame", "quantita": 60, "unita": "g" },
+        { "nome": "carote", "quantita": 50, "unita": "g" },
+        { "nome": "avocado", "quantita": 50, "unita": "g" },
+        { "nome": "olio di sesamo", "quantita": 5, "unita": "ml" },
+        { "nome": "zenzero fresco", "quantita": 5, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 480,
+        "proteine": 28,
+        "carboidrati": 52,
+        "grassi": 18,
+        "fibre": 8,
+        "sodio": 180
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 30,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR023",
+      "nome": "Polenta con funghi misti",
+      "ingredienti": [
+        { "nome": "farina di mais", "quantita": 70, "unita": "g" },
+        { "nome": "funghi misti", "quantita": 200, "unita": "g" },
+        { "nome": "cipolla", "quantita": 40, "unita": "g" },
+        { "nome": "passata di pomodoro", "quantita": 80, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "rosmarino", "quantita": 2, "unita": "g" },
+        { "nome": "parmigiano reggiano", "quantita": 20, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 420,
+        "proteine": 12,
+        "carboidrati": 65,
+        "grassi": 14,
+        "fibre": 6,
+        "sodio": 150
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": "ridurre_parmigiano"
+      },
+      "tempo_preparazione": 35,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR024",
+      "nome": "Insalata di orzo perlato con sgombro",
+      "ingredienti": [
+        { "nome": "orzo perlato", "quantita": 70, "unita": "g" },
+        { "nome": "sgombro", "quantita": 100, "unita": "g" },
+        { "nome": "verdure miste", "quantita": 200, "unita": "g" },
+        { "nome": "olive", "quantita": 20, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "succo di limone", "quantita": 10, "unita": "ml" },
+        { "nome": "prezzemolo", "quantita": 5, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 460,
+        "proteine": 26,
+        "carboidrati": 48,
+        "grassi": 20,
+        "fibre": 7,
+        "sodio": 190
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["primavera", "estate"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_quinoa",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 25,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR025",
+      "nome": "Spezzatino di seitan con patate",
+      "ingredienti": [
+        { "nome": "seitan", "quantita": 150, "unita": "g" },
+        { "nome": "patate", "quantita": 150, "unita": "g" },
+        { "nome": "carote", "quantita": 100, "unita": "g" },
+        { "nome": "sedano", "quantita": 50, "unita": "g" },
+        { "nome": "cipolla", "quantita": 40, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "rosmarino", "quantita": 3, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 440,
+        "proteine": 32,
+        "carboidrati": 45,
+        "grassi": 14,
+        "fibre": 6,
+        "sodio": 170
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": false,
+        "diabetici": "ridurre_patate",
+        "ipertesi": true
+      },
+      "tempo_preparazione": 40,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR026",
+      "nome": "Insalata di fave e cicoria",
+      "ingredienti": [
+        { "nome": "fave fresche sgusciate", "quantita": 150, "unita": "g" },
+        { "nome": "cicoria", "quantita": 200, "unita": "g" },
+        { "nome": "pane integrale", "quantita": 50, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "aglio", "quantita": 3, "unita": "g" },
+        { "nome": "peperoncino", "quantita": 2, "unita": "g" },
+        { "nome": "limone", "quantita": 5, "unita": "ml" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 410,
+        "proteine": 22,
+        "carboidrati": 55,
+        "grassi": 12,
+        "fibre": 14,
+        "sodio": 160
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["primavera"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pane_senza_glutine",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 20,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR027",
+      "nome": "Risotto ai carciofi",
+      "ingredienti": [
+        { "nome": "riso arborio", "quantita": 70, "unita": "g" },
+        { "nome": "carciofi", "quantita": 200, "unita": "g" },
+        { "nome": "cipolla", "quantita": 30, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "brodo vegetale", "quantita": 300, "unita": "ml" },
+        { "nome": "parmigiano reggiano", "quantita": 20, "unita": "g" },
+        { "nome": "prezzemolo", "quantita": 5, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 450,
+        "proteine": 14,
+        "carboidrati": 65,
+        "grassi": 16,
+        "fibre": 8,
+        "sodio": 180
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["inverno", "primavera"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": "ridurre_parmigiano"
+      },
+      "tempo_preparazione": 35,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR028",
+      "nome": "Tagliata di manzo con rucola",
+      "ingredienti": [
+        { "nome": "controfiletto di manzo", "quantita": 150, "unita": "g" },
+        { "nome": "rucola", "quantita": 100, "unita": "g" },
+        { "nome": "pomodorini", "quantita": 100, "unita": "g" },
+        { "nome": "scaglie di parmigiano", "quantita": 20, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "aceto balsamico", "quantita": 5, "unita": "ml" },
+        { "nome": "rosmarino", "quantita": 2, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 460,
+        "proteine": 38,
+        "carboidrati": 12,
+        "grassi": 28,
+        "fibre": 3,
+        "sodio": 200
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": "ridurre_parmigiano"
+      },
+      "tempo_preparazione": 20,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR029",
+      "nome": "Pasta e fagioli",
+      "ingredienti": [
+        { "nome": "pasta integrale", "quantita": 60, "unita": "g" },
+        { "nome": "fagioli borlotti", "quantita": 120, "unita": "g" },
+        { "nome": "passata di pomodoro", "quantita": 80, "unita": "g" },
+        { "nome": "sedano", "quantita": 30, "unita": "g" },
+        { "nome": "carota", "quantita": 30, "unita": "g" },
+        { "nome": "cipolla", "quantita": 30, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "rosmarino", "quantita": 2, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 440,
+        "proteine": 20,
+        "carboidrati": 65,
+        "grassi": 12,
+        "fibre": 14,
+        "sodio": 160
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pasta_senza_glutine",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 45,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR030",
+      "nome": "Zucchine ripiene di quinoa",
+      "ingredienti": [
+        { "nome": "zucchine", "quantita": 250, "unita": "g" },
+        { "nome": "quinoa", "quantita": 60, "unita": "g" },
+        { "nome": "pomodorini", "quantita": 80, "unita": "g" },
+        { "nome": "ricotta", "quantita": 50, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "erbe aromatiche", "quantita": 5, "unita": "g" },
+        { "nome": "pinoli", "quantita": 10, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 420,
+        "proteine": 18,
+        "carboidrati": 48,
+        "grassi": 16,
+        "fibre": 7,
+        "sodio": 150
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["estate"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 40,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR031",
+      "nome": "Insalata di riso venere con gamberi e mango",
+      "ingredienti": [
+        { "nome": "riso venere", "quantita": 70, "unita": "g" },
+        { "nome": "gamberi", "quantita": 120, "unita": "g" },
+        { "nome": "mango", "quantita": 80, "unita": "g" },
+        { "nome": "avocado", "quantita": 50, "unita": "g" },
+        { "nome": "cetrioli", "quantita": 50, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "lime", "quantita": 5, "unita": "ml" },
+        { "nome": "zenzero fresco", "quantita": 3, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 465,
+        "proteine": 25,
+        "carboidrati": 58,
+        "grassi": 17,
+        "fibre": 8,
+        "sodio": 165
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["estate"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 30,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR032",
+      "nome": "Vellutata di cavolfiore con crostini di quinoa",
+      "ingredienti": [
+        { "nome": "cavolfiore", "quantita": 250, "unita": "g" },
+        { "nome": "patate", "quantita": 100, "unita": "g" },
+        { "nome": "quinoa", "quantita": 40, "unita": "g" },
+        { "nome": "cipolla", "quantita": 30, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "curcuma", "quantita": 2, "unita": "g" },
+        { "nome": "semi di zucca", "quantita": 10, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 410,
+        "proteine": 15,
+        "carboidrati": 55,
+        "grassi": 16,
+        "fibre": 10,
+        "sodio": 140
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": "ridurre_patate",
+        "ipertesi": true
+      },
+      "tempo_preparazione": 35,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR033",
+      "nome": "Sformato di miglio con verdure",
+      "ingredienti": [
+        { "nome": "miglio", "quantita": 70, "unita": "g" },
+        { "nome": "zucchine", "quantita": 100, "unita": "g" },
+        { "nome": "carote", "quantita": 100, "unita": "g" },
+        { "nome": "uova", "quantita": 1, "unita": "unità" },
+        { "nome": "parmigiano reggiano", "quantita": 20, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "timo", "quantita": 2, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 445,
+        "proteine": 18,
+        "carboidrati": 60,
+        "grassi": 15,
+        "fibre": 7,
+        "sodio": 170
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["primavera", "estate"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": "ridurre_parmigiano"
+      },
+      "tempo_preparazione": 45,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR034",
+      "nome": "Insalata di lenticchie con feta e pomodorini",
+      "ingredienti": [
+        { "nome": "lenticchie", "quantita": 120, "unita": "g" },
+        { "nome": "feta", "quantita": 50, "unita": "g" },
+        { "nome": "pomodorini", "quantita": 100, "unita": "g" },
+        { "nome": "cipolla rossa", "quantita": 30, "unita": "g" },
+        { "nome": "olive nere", "quantita": 20, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "origano", "quantita": 2, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 435,
+        "proteine": 24,
+        "carboidrati": 45,
+        "grassi": 18,
+        "fibre": 12,
+        "sodio": 190
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": "ridurre_feta"
+      },
+      "tempo_preparazione": 25,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "PR035",
+      "nome": "Bowl di grano saraceno con tempeh e cavolo rosso",
+      "ingredienti": [
+        { "nome": "grano saraceno", "quantita": 70, "unita": "g" },
+        { "nome": "tempeh", "quantita": 100, "unita": "g" },
+        { "nome": "cavolo rosso", "quantita": 100, "unita": "g" },
+        { "nome": "carote", "quantita": 50, "unita": "g" },
+        { "nome": "semi di sesamo", "quantita": 10, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "salsa di soia", "quantita": 5, "unita": "ml" },
+        { "nome": "zenzero fresco", "quantita": 3, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 455,
+        "proteine": 22,
+        "carboidrati": 56,
+        "grassi": 16,
+        "fibre": 9,
+        "sodio": 175
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": "senza_salsa_soia"
+      },
+      "tempo_preparazione": 30,
+      "difficolta": "media",
+      "porzioni": 1
+    }
+  ],
+  "cene": [
+    {
+      "id_pasto": "CE001",
+      "nome": "Filetto di orata al cartoccio con verdure",
+      "ingredienti": [
+        { "nome": "filetto di orata", "quantita": 150, "unita": "g" },
+        { "nome": "zucchine", "quantita": 100, "unita": "g" },
+        { "nome": "pomodorini", "quantita": 100, "unita": "g" },
+        { "nome": "patate", "quantita": 100, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "prezzemolo", "quantita": 5, "unita": "g" },
+        { "nome": "limone", "quantita": 1, "unita": "unità" },
+        { "nome": "aglio", "quantita": 1, "unita": "spicchio" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 380,
+        "proteine": 32,
+        "carboidrati": 25,
+        "grassi": 18,
+        "fibre": 6,
+        "sodio": 150
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": "ridurre_patate",
+        "ipertesi": true
+      },
+      "tempo_preparazione": 35,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE002",
+      "nome": "Frittata di albumi con spinaci e ricotta",
+      "ingredienti": [
+        { "nome": "albumi", "quantita": 200, "unita": "g" },
+        { "nome": "spinaci freschi", "quantita": 150, "unita": "g" },
+        { "nome": "ricotta vaccina", "quantita": 50, "unita": "g" },
+        { "nome": "cipolla", "quantita": 30, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "pepe nero", "quantita": 1, "unita": "g" },
+        { "nome": "noce moscata", "quantita": 1, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 290,
+        "proteine": 35,
+        "carboidrati": 8,
+        "grassi": 14,
+        "fibre": 4,
+        "sodio": 160
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 20,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE003",
+      "nome": "Zuppa di lenticchie rosse e zucca",
+      "ingredienti": [
+        { "nome": "lenticchie rosse", "quantita": 80, "unita": "g" },
+        { "nome": "zucca", "quantita": 150, "unita": "g" },
+        { "nome": "carote", "quantita": 50, "unita": "g" },
+        { "nome": "cipolla", "quantita": 30, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "curcuma", "quantita": 2, "unita": "g" },
+        { "nome": "zenzero fresco", "quantita": 5, "unita": "g" },
+        { "nome": "crostini integrali", "quantita": 30, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 350,
+        "proteine": 18,
+        "carboidrati": 45,
+        "grassi": 12,
+        "fibre": 12,
+        "sodio": 140
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": "senza_crostini",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 30,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE004",
+      "nome": "Petto di pollo alla griglia con insalata di quinoa",
+      "ingredienti": [
+        { "nome": "petto di pollo", "quantita": 150, "unita": "g" },
+        { "nome": "quinoa", "quantita": 50, "unita": "g" },
+        { "nome": "pomodorini", "quantita": 100, "unita": "g" },
+        { "nome": "cetrioli", "quantita": 50, "unita": "g" },
+        { "nome": "olive", "quantita": 20, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "limone", "quantita": 1, "unita": "unità" },
+        { "nome": "basilico", "quantita": 5, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 420,
+        "proteine": 38,
+        "carboidrati": 30,
+        "grassi": 16,
+        "fibre": 5,
+        "sodio": 170
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["primavera", "estate"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 25,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE005",
+      "nome": "Burger di ceci e melanzane",
+      "ingredienti": [
+        { "nome": "ceci cotti", "quantita": 150, "unita": "g" },
+        { "nome": "melanzane", "quantita": 100, "unita": "g" },
+        { "nome": "cipolla", "quantita": 30, "unita": "g" },
+        { "nome": "prezzemolo", "quantita": 5, "unita": "g" },
+        { "nome": "pangrattato", "quantita": 20, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "insalata mista", "quantita": 100, "unita": "g" },
+        { "nome": "salsa tahini", "quantita": 15, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 380,
+        "proteine": 16,
+        "carboidrati": 45,
+        "grassi": 15,
+        "fibre": 12,
+        "sodio": 180
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["estate"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pangrattato_senza_glutine",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 40,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE006",
+      "nome": "Salmone al forno con crosta di mandorle",
+      "ingredienti": [
+        { "nome": "filetto di salmone", "quantita": 150, "unita": "g" },
+        { "nome": "mandorle tritate", "quantita": 30, "unita": "g" },
+        { "nome": "erbe aromatiche", "quantita": 5, "unita": "g" },
+        { "nome": "zucchine", "quantita": 150, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "limone", "quantita": 1, "unita": "unità" },
+        { "nome": "aglio", "quantita": 1, "unita": "spicchio" },
+        { "nome": "patate al vapore", "quantita": 100, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 450,
+        "proteine": 35,
+        "carboidrati": 20,
+        "grassi": 28,
+        "fibre": 5,
+        "sodio": 160
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": "ridurre_patate",
+        "ipertesi": true
+      },
+      "tempo_preparazione": 30,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE007",
+      "nome": "Minestrone di verdure con farro",
+      "ingredienti": [
+        { "nome": "verdure miste", "quantita": 250, "unita": "g" },
+        { "nome": "farro", "quantita": 40, "unita": "g" },
+        { "nome": "fagioli cannellini", "quantita": 50, "unita": "g" },
+        { "nome": "cipolla", "quantita": 30, "unita": "g" },
+        { "nome": "sedano", "quantita": 30, "unita": "g" },
+        { "nome": "carota", "quantita": 30, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "parmigiano reggiano", "quantita": 10, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 320,
+        "proteine": 15,
+        "carboidrati": 45,
+        "grassi": 12,
+        "fibre": 10,
+        "sodio": 170
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_quinoa",
+        "diabetici": true,
+        "ipertesi": "senza_parmigiano"
+      },
+      "tempo_preparazione": 45,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE008",
+      "nome": "Tofu marinato alla griglia con verdure",
+      "ingredienti": [
+        { "nome": "tofu", "quantita": 200, "unita": "g" },
+        { "nome": "verdure grigliate miste", "quantita": 200, "unita": "g" },
+        { "nome": "salsa di soia", "quantita": 10, "unita": "ml" },
+        { "nome": "zenzero fresco", "quantita": 5, "unita": "g" },
+        { "nome": "aglio", "quantita": 2, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "semi di sesamo", "quantita": 5, "unita": "g" },
+        { "nome": "quinoa", "quantita": 50, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 380,
+        "proteine": 25,
+        "carboidrati": 35,
+        "grassi": 18,
+        "fibre": 8,
+        "sodio": 200
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": false,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": "senza_salsa_soia"
+      },
+      "tempo_preparazione": 35,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE009",
+      "nome": "Insalata di mare con patate e olive",
+      "ingredienti": [
+        { "nome": "polpo", "quantita": 120, "unita": "g" },
+        { "nome": "gamberi", "quantita": 80, "unita": "g" },
+        { "nome": "patate lesse", "quantita": 100, "unita": "g" },
+        { "nome": "olive taggiasche", "quantita": 20, "unita": "g" },
+        { "nome": "prezzemolo", "quantita": 5, "unita": "g" },
+        { "nome": "limone", "quantita": 1, "unita": "unità" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "sedano", "quantita": 30, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 360,
+        "proteine": 32,
+        "carboidrati": 25,
+        "grassi": 16,
+        "fibre": 4,
+        "sodio": 190
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["primavera", "estate"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": "ridurre_patate",
+        "ipertesi": true
+      },
+      "tempo_preparazione": 40,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE010",
+      "nome": "Straccetti di seitan con funghi",
+      "ingredienti": [
+        { "nome": "seitan", "quantita": 150, "unita": "g" },
+        { "nome": "funghi champignon", "quantita": 150, "unita": "g" },
+        { "nome": "cipolla", "quantita": 30, "unita": "g" },
+        { "nome": "prezzemolo", "quantita": 5, "unita": "g" },
+        { "nome": "aglio", "quantita": 2, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "salsa tamari", "quantita": 5, "unita": "ml" },
+        { "nome": "insalata mista", "quantita": 100, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 340,
+        "proteine": 28,
+        "carboidrati": 20,
+        "grassi": 15,
+        "fibre": 6,
+        "sodio": 180
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": false,
+        "diabetici": true,
+        "ipertesi": "senza_salsa_tamari"
+      },
+      "tempo_preparazione": 25,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE011",
+      "nome": "Vitello tonnato con misticanza",
+      "ingredienti": [
+        { "nome": "fesa di vitello", "quantita": 120, "unita": "g" },
+        { "nome": "tonno al naturale", "quantita": 40, "unita": "g" },
+        { "nome": "capperi", "quantita": 5, "unita": "g" },
+        { "nome": "insalata misticanza", "quantita": 100, "unita": "g" },
+        { "nome": "radicchio", "quantita": 50, "unita": "g" },
+        { "nome": "yogurt greco 0%", "quantita": 30, "unita": "g" },
+        { "nome": "succo di limone", "quantita": 5, "unita": "ml" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 330,
+        "proteine": 42,
+        "carboidrati": 8,
+        "grassi": 16,
+        "fibre": 4,
+        "sodio": 250
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["primavera", "estate"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": "senza_capperi"
+      },
+      "tempo_preparazione": 30,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE012",
+      "nome": "Vellutata di carote e zenzero",
+      "ingredienti": [
+        { "nome": "carote", "quantita": 200, "unita": "g" },
+        { "nome": "patate", "quantita": 50, "unita": "g" },
+        { "nome": "zenzero fresco", "quantita": 10, "unita": "g" },
+        { "nome": "cipolla", "quantita": 30, "unita": "g" },
+        { "nome": "latte di cocco", "quantita": 50, "unita": "ml" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "semi di zucca", "quantita": 10, "unita": "g" },
+        { "nome": "curcuma", "quantita": 2, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 280,
+        "proteine": 8,
+        "carboidrati": 35,
+        "grassi": 14,
+        "fibre": 8,
+        "sodio": 120
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": "ridurre_patate",
+        "ipertesi": true
+      },
+      "tempo_preparazione": 25,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE013",
+      "nome": "Calamari ripieni di quinoa",
+      "ingredienti": [
+        { "nome": "calamari", "quantita": 200, "unita": "g" },
+        { "nome": "quinoa", "quantita": 40, "unita": "g" },
+        { "nome": "piselli", "quantita": 50, "unita": "g" },
+        { "nome": "carote", "quantita": 40, "unita": "g" },
+        { "nome": "prezzemolo", "quantita": 5, "unita": "g" },
+        { "nome": "aglio", "quantita": 1, "unita": "spicchio" },
+        { "nome": "olio extravergine d'oliva", "quantita": 15, "unita": "ml" },
+        { "nome": "limone", "quantita": 1, "unita": "unità" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 390,
+        "proteine": 35,
+        "carboidrati": 30,
+        "grassi": 16,
+        "fibre": 6,
+        "sodio": 180
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["primavera"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 45,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE014",
+      "nome": "Burger di miglio e lenticchie",
+      "ingredienti": [
+        { "nome": "miglio", "quantita": 60, "unita": "g" },
+        { "nome": "lenticchie cotte", "quantita": 100, "unita": "g" },
+        { "nome": "carote", "quantita": 50, "unita": "g" },
+        { "nome": "cipolla", "quantita": 30, "unita": "g" },
+        { "nome": "prezzemolo", "quantita": 5, "unita": "g" },
+        { "nome": "semi di girasole", "quantita": 10, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "insalata mista", "quantita": 100, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 420,
+        "proteine": 18,
+        "carboidrati": 65,
+        "grassi": 12,
+        "fibre": 14,
+        "sodio": 140
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 40,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE015",
+      "nome": "Petto di anatra con indivia brasata",
+      "ingredienti": [
+        { "nome": "petto d'anatra", "quantita": 150, "unita": "g" },
+        { "nome": "indivia belga", "quantita": 200, "unita": "g" },
+        { "nome": "mele", "quantita": 50, "unita": "g" },
+        { "nome": "scalogno", "quantita": 30, "unita": "g" },
+        { "nome": "timo", "quantita": 2, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 10, "unita": "ml" },
+        { "nome": "aceto balsamico", "quantita": 5, "unita": "ml" },
+        { "nome": "brodo vegetale", "quantita": 50, "unita": "ml" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 420,
+        "proteine": 35,
+        "carboidrati": 15,
+        "grassi": 26,
+        "fibre": 6,
+        "sodio": 160
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 35,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE016",
+      "nome": "Tortino di verdure al forno",
+      "ingredienti": [
+        {
+          "nome": "zucchine",
+          "quantita": 100,
+          "unita": "g"
+        },
+        {
+          "nome": "melanzane",
+          "quantita": 100,
+          "unita": "g"
+        },
+        {
+          "nome": "peperoni",
+          "quantita": 80,
+          "unita": "g"
+        },
+        {
+          "nome": "cipolle",
+          "quantita": 50,
+          "unita": "g"
+        },
+        {
+          "nome": "pomodori",
+          "quantita": 100,
+          "unita": "g"
+        },
+        {
+          "nome": "olio extravergine d'oliva",
+          "quantita": 10,
+          "unita": "ml"
+        },
+        {
+          "nome": "pane grattugiato",
+          "quantita": 20,
+          "unita": "g"
+        },
+        {
+          "nome": "parmigiano reggiano",
+          "quantita": 20,
+          "unita": "g"
+        }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 330,
+        "proteine": 12,
+        "carboidrati": 25,
+        "grassi": 18,
+        "fibre": 8,
+        "sodio": 160
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["estate"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pane_grattugiato_senza_glutine",
+        "diabetici": true,
+        "ipertesi": "ridurre_quantità_parmigiano"
+      },
+      "tempo_preparazione": 45,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE017",
+      "nome": "Risotto ai funghi",
+      "ingredienti": [
+        {
+          "nome": "riso carnaroli",
+          "quantita": 80,
+          "unita": "g"
+        },
+        {
+          "nome": "funghi misti",
+          "quantita": 150,
+          "unita": "g"
+        },
+        {
+          "nome": "cipolla",
+          "quantita": 30,
+          "unita": "g"
+        },
+        {
+          "nome": "vino bianco",
+          "quantita": 50,
+          "unita": "ml"
+        },
+        {
+          "nome": "brodo vegetale",
+          "quantita": 400,
+          "unita": "ml"
+        },
+        {
+          "nome": "olio extravergine d'oliva",
+          "quantita": 10,
+          "unita": "ml"
+        },
+        {
+          "nome": "parmigiano reggiano",
+          "quantita": 20,
+          "unita": "g"
+        }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 420,
+        "proteine": 14,
+        "carboidrati": 55,
+        "grassi": 16,
+        "fibre": 4,
+        "sodio": 180
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_riso_integrale",
+        "diabetici": "ridurre_quantità_parmigiano",
+        "ipertesi": "senza_parmigiano"
+      },
+      "tempo_preparazione": 30,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE018",
+      "nome": "Lenticchie rosse in umido con riso rosso",
+      "ingredienti": [
+        {
+          "nome": "lenticchie rosse",
+          "quantita": 100,
+          "unita": "g"
+        },
+        {
+          "nome": "riso rosso",
+          "quantita": 60,
+          "unita": "g"
+        },
+        {
+          "nome": "pomodori pelati",
+          "quantita": 100,
+          "unita": "g"
+        },
+        {
+          "nome": "cipolle",
+          "quantita": 30,
+          "unita": "g"
+        },
+        {
+          "nome": "carota",
+          "quantita": 30,
+          "unita": "g"
+        },
+        {
+          "nome": "olio extravergine d'oliva",
+          "quantita": 10,
+          "unita": "ml"
+        },
+        {
+          "nome": "alloro",
+          "quantita": 1,
+          "unita": "foglia"
+        },
+        {
+          "nome": "paprika",
+          "quantita": 2,
+          "unita": "g"
+        }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 370,
+        "proteine": 18,
+        "carboidrati": 55,
+        "grassi": 10,
+        "fibre": 12,
+        "sodio": 140
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "tempo_preparazione": 45,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE019",
+      "nome": "Involtini di verza con ripieno di verdure",
+      "ingredienti": [
+        {
+          "nome": "verza",
+          "quantita": 4,
+          "unita": "foglie"
+        },
+        {
+          "nome": "carote",
+          "quantita": 50,
+          "unita": "g"
+        },
+        {
+          "nome": "peperoni",
+          "quantita": 50,
+          "unita": "g"
+        },
+        {
+          "nome": "sedano",
+          "quantita": 30,
+          "unita": "g"
+        },
+        {
+          "nome": "riso integrale",
+          "quantita": 30,
+          "unita": "g"
+        },
+        {
+          "nome": "olio extravergine d'oliva",
+          "quantita": 10,
+          "unita": "ml"
+        },
+        {
+          "nome": "pomodori pelati",
+          "quantita": 100,
+          "unita": "g"
+        },
+        {
+          "nome": "basilico",
+          "quantita": 5,
+          "unita": "g"
+        }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 340,
+        "proteine": 12,
+        "carboidrati": 45,
+        "grassi": 14,
+        "fibre": 8,
+        "sodio": 160
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": "senza_sale"
+      },
+      "tempo_preparazione": 50,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE020",
+      "nome": "Spiedini di tofu e verdure",
+      "ingredienti": [
+        {
+          "nome": "tofu",
+          "quantita": 150,
+          "unita": "g"
+        },
+        {
+          "nome": "zucchine",
+          "quantita": 100,
+          "unita": "g"
+        },
+        {
+          "nome": "peperoni",
+          "quantita": 100,
+          "unita": "g"
+        },
+        {
+          "nome": "cipolla rossa",
+          "quantita": 30,
+          "unita": "g"
+        },
+        {
+          "nome": "olio extravergine d'oliva",
+          "quantita": 10,
+          "unita": "ml"
+        },
+        {
+          "nome": "salsa di soia",
+          "quantita": 5,
+          "unita": "ml"
+        },
+        {
+          "nome": "semi di sesamo",
+          "quantita": 5,
+          "unita": "g"
+        },
+        {
+          "nome": "riso integrale",
+          "quantita": 60,
+          "unita": "g"
+        }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 400,
+        "proteine": 24,
+        "carboidrati": 40,
+        "grassi": 16,
+        "fibre": 6,
+        "sodio": 190
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": false,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": "senza_salsa_soia"
+      },
+      "tempo_preparazione": 40,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE021",
+      "nome": "Patate ripiene di ricotta e spinaci",
+      "ingredienti": [
+        {
+          "nome": "patate",
+          "quantita": 2,
+          "unita": "unità"
+        },
+        {
+          "nome": "ricotta vaccina",
+          "quantita": 50,
+          "unita": "g"
+        },
+        {
+          "nome": "spinaci",
+          "quantita": 100,
+          "unita": "g"
+        },
+        {
+          "nome": "noce moscata",
+          "quantita": 1,
+          "unita": "pizzico"
+        },
+        {
+          "nome": "olio extravergine d'oliva",
+          "quantita": 5,
+          "unita": "ml"
+        },
+        {
+          "nome": "parmigiano reggiano",
+          "quantita": 10,
+          "unita": "g"
+        }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 380,
+        "proteine": 18,
+        "carboidrati": 50,
+        "grassi": 14,
+        "fibre": 6,
+        "sodio": 160
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": "ridurre_porzione_patate",
+        "ipertesi": "senza_parmigiano"
+      },
+      "tempo_preparazione": 40,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE022",
+      "nome": "Curry di verdure con riso basmati",
+      "ingredienti": [
+        {
+          "nome": "zucca",
+          "quantita": 150,
+          "unita": "g"
+        },
+        {
+          "nome": "ceci",
+          "quantita": 100,
+          "unita": "g"
+        },
+        {
+          "nome": "cipolla",
+          "quantita": 30,
+          "unita": "g"
+        },
+        {
+          "nome": "peperoni",
+          "quantita": 80,
+          "unita": "g"
+        },
+        {
+          "nome": "curry in polvere",
+          "quantita": 3,
+          "unita": "g"
+        },
+        {
+          "nome": "latte di cocco",
+          "quantita": 100,
+          "unita": "ml"
+        },
+        {
+          "nome": "riso basmati",
+          "quantita": 60,
+          "unita": "g"
+        },
+        {
+          "nome": "spinaci",
+          "quantita": 50,
+          "unita": "g"
+        }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 420,
+        "proteine": 16,
+        "carboidrati": 60,
+        "grassi": 14,
+        "fibre": 8,
+        "sodio": 180
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": "ridurre_porzione_riso",
+        "ipertesi": "senza_sale"
+      },
+      "tempo_preparazione": 35,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE023",
+      "nome": "Pollo alla cacciatora con polenta",
+      "ingredienti": [
+        {
+          "nome": "pollo",
+          "quantita": 150,
+          "unita": "g"
+        },
+        {
+          "nome": "pomodori pelati",
+          "quantita": 100,
+          "unita": "g"
+        },
+        {
+          "nome": "cipolla",
+          "quantita": 30,
+          "unita": "g"
+        },
+        {
+          "nome": "olive nere",
+          "quantita": 20,
+          "unita": "g"
+        },
+        {
+          "nome": "capperi",
+          "quantita": 5,
+          "unita": "g"
+        },
+        {
+          "nome": "rosmarino",
+          "quantita": 2,
+          "unita": "g"
+        },
+        {
+          "nome": "polenta",
+          "quantita": 100,
+          "unita": "g"
+        },
+        {
+          "nome": "olio extravergine d'oliva",
+          "quantita": 10,
+          "unita": "ml"
+        }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 400,
+        "proteine": 35,
+        "carboidrati": 40,
+        "grassi": 14,
+        "fibre": 6,
+        "sodio": 180
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": "ridurre_quantità_polenta",
+        "ipertesi": "senza_capperi"
+      },
+      "tempo_preparazione": 45,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE024",
+      "nome": "Pasta con broccoli e noci",
+      "ingredienti": [
+        {
+          "nome": "pasta integrale",
+          "quantita": 80,
+          "unita": "g"
+        },
+        {
+          "nome": "broccoli",
+          "quantita": 150,
+          "unita": "g"
+        },
+        {
+          "nome": "aglio",
+          "quantita": 2,
+          "unita": "spicchi"
+        },
+        {
+          "nome": "peperoncino",
+          "quantita": 1,
+          "unita": "g"
+        },
+        {
+          "nome": "noci",
+          "quantita": 20,
+          "unita": "g"
+        },
+        {
+          "nome": "olio extravergine d'oliva",
+          "quantita": 10,
+          "unita": "ml"
+        },
+        {
+          "nome": "parmigiano reggiano",
+          "quantita": 10,
+          "unita": "g"
+        }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 410,
+        "proteine": 16,
+        "carboidrati": 55,
+        "grassi": 16,
+        "fibre": 8,
+        "sodio": 150
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pasta_senza_glutine",
+        "diabetici": "ridurre_quantità_parmigiano",
+        "ipertesi": "senza_parmigiano"
+      },
+      "tempo_preparazione": 30,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE025",
+      "nome": "Ravioli di ricotta e spinaci con salsa ai funghi",
+      "ingredienti": [
+        {
+          "nome": "ravioli ricotta e spinaci",
+          "quantita": 150,
+          "unita": "g"
+        },
+        {
+          "nome": "funghi champignon",
+          "quantita": 100,
+          "unita": "g"
+        },
+        {
+          "nome": "panna da cucina 12%",
+          "quantita": 50,
+          "unita": "ml"
+        },
+        {
+          "nome": "prezzemolo",
+          "quantita": 5,
+          "unita": "g"
+        },
+        {
+          "nome": "noce moscata",
+          "quantita": 1,
+          "unita": "g"
+        },
+        {
+          "nome": "olio extravergine d'oliva",
+          "quantita": 10,
+          "unita": "ml"
+        }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 390,
+        "proteine": 18,
+        "carboidrati": 45,
+        "grassi": 18,
+        "fibre": 4,
+        "sodio": 170
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": "moderato",
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_ravioli_senza_glutine",
+        "diabetici": "ridurre_porzione_ravioli_e_panna",
+        "ipertesi": true
+      },
+      "tempo_preparazione": 35,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE026",
+      "nome": "Falafel con insalata di finocchi e arance",
+      "ingredienti": [
+        {
+          "nome": "ceci",
+          "quantita": 150,
+          "unita": "g"
+        },
+        {
+          "nome": "finocchi",
+          "quantita": 150,
+          "unita": "g"
+        },
+        {
+          "nome": "arance",
+          "quantita": 1,
+          "unita": "unità"
+        },
+        {
+          "nome": "prezzemolo",
+          "quantita": 5,
+          "unita": "g"
+        },
+        {
+          "nome": "cipolla",
+          "quantita": 30,
+          "unita": "g"
+        },
+        {
+          "nome": "olio extravergine d'oliva",
+          "quantita": 10,
+          "unita": "ml"
+        },
+        {
+          "nome": "tahina",
+          "quantita": 10,
+          "unita": "g"
+        },
+        {
+          "nome": "limone",
+          "quantita": 1,
+          "unita": "unità"
+        }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 390,
+        "proteine": 16,
+        "carboidrati": 50,
+        "grassi": 14,
+        "fibre": 10,
+        "sodio": 160
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": "senza_tahina"
+      },
+      "tempo_preparazione": 40,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE027",
+      "nome": "Merluzzo alla mediterranea con patate",
+      "ingredienti": [
+        {
+          "nome": "filetto di merluzzo",
+          "quantita": 150,
+          "unita": "g"
+        },
+        {
+          "nome": "patate",
+          "quantita": 150,
+          "unita": "g"
+        },
+        {
+          "nome": "pomodorini",
+          "quantita": 100,
+          "unita": "g"
+        },
+        {
+          "nome": "olive nere",
+          "quantita": 20,
+          "unita": "g"
+        },
+        {
+          "nome": "capperi",
+          "quantita": 5,
+          "unita": "g"
+        },
+        {
+          "nome": "origano",
+          "quantita": 2,
+          "unita": "g"
+        },
+        {
+          "nome": "olio extravergine d'oliva",
+          "quantita": 10,
+          "unita": "ml"
+        }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 360,
+        "proteine": 32,
+        "carboidrati": 35,
+        "grassi": 12,
+        "fibre": 6,
+        "sodio": 170
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["primavera", "estate"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": "ridurre_quantità_patate",
+        "ipertesi": "senza_capperi"
+      },
+      "tempo_preparazione": 30,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE028",
+      "nome": "Crema di cavolo nero e ceci",
+      "ingredienti": [
+        {
+          "nome": "cavolo nero",
+          "quantita": 150,
+          "unita": "g"
+        },
+        {
+          "nome": "ceci",
+          "quantita": 100,
+          "unita": "g"
+        },
+        {
+          "nome": "patate",
+          "quantita": 50,
+          "unita": "g"
+        },
+        {
+          "nome": "cipolla",
+          "quantita": 30,
+          "unita": "g"
+        },
+        {
+          "nome": "aglio",
+          "quantita": 2,
+          "unita": "spicchi"
+        },
+        {
+          "nome": "olio extravergine d'oliva",
+          "quantita": 10,
+          "unita": "ml"
+        },
+        {
+          "nome": "semi di zucca",
+          "quantita": 10,
+          "unita": "g"
+        }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 340,
+        "proteine": 16,
+        "carboidrati": 45,
+        "grassi": 12,
+        "fibre": 10,
+        "sodio": 160
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": "ridurre_quantità_patate",
+        "ipertesi": true
+      },
+      "tempo_preparazione": 35,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE029",
+      "nome": "Polpette di quinoa e verdure",
+      "ingredienti": [
+        {
+          "nome": "quinoa",
+          "quantita": 50,
+          "unita": "g"
+        },
+        {
+          "nome": "carote",
+          "quantita": 50,
+          "unita": "g"
+        },
+        {
+          "nome": "zucchine",
+          "quantita": 50,
+          "unita": "g"
+        },
+        {
+          "nome": "pangrattato",
+          "quantita": 20,
+          "unita": "g"
+        },
+        {
+          "nome": "uova",
+          "quantita": 1,
+          "unita": "unità"
+        },
+        {
+          "nome": "olio extravergine d'oliva",
+          "quantita": 10,
+          "unita": "ml"
+        },
+        {
+          "nome": "salsa di pomodoro",
+          "quantita": 100,
+          "unita": "g"
+        },
+        {
+          "nome": "basilico",
+          "quantita": 5,
+          "unita": "g"
+        }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 380,
+        "proteine": 16,
+        "carboidrati": 40,
+        "grassi": 14,
+        "fibre": 8,
+        "sodio": 160
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pangrattato_senza_glutine",
+        "diabetici": true,
+        "ipertesi": "senza_sale"
+      },
+      "tempo_preparazione": 40,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "CE030",
+      "nome": "Tagliatelle con crema di zucca e mandorle",
+      "ingredienti": [
+        {
+          "nome": "tagliatelle integrali",
+          "quantita": 80,
+          "unita": "g"
+        },
+        {
+          "nome": "zucca",
+          "quantita": 150,
+          "unita": "g"
+        },
+        {
+          "nome": "mandorle",
+          "quantita": 20,
+          "unita": "g"
+        },
+        {
+          "nome": "scalogno",
+          "quantita": 20,
+          "unita": "g"
+        },
+        {
+          "nome": "noce moscata",
+          "quantita": 1,
+          "unita": "pizzico"
+        },
+        {
+          "nome": "olio extravergine d'oliva",
+          "quantita": 10,
+          "unita": "ml"
+        },
+        {
+          "nome": "parmigiano reggiano",
+          "quantita": 10,
+          "unita": "g"
+        }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 390,
+        "proteine": 16,
+        "carboidrati": 50,
+        "grassi": 16,
+        "fibre": 6,
+        "sodio": 150
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_tagliatelle_senza_glutine",
+        "diabetici": "ridurre_quantità_parmigiano",
+        "ipertesi": "senza_parmigiano"
+      },
+      "tempo_preparazione": 35,
+      "difficolta": "media",
+      "porzioni": 1
+    }
+  ],
+  "spuntini": [
+    {
+      "id_pasto": "SP001",
+      "nome": "Mix di frutta secca e fresca",
+      "ingredienti": [
+        { "nome": "mandorle", "quantita": 15, "unita": "g" },
+        { "nome": "noci", "quantita": 10, "unita": "g" },
+        { "nome": "mela", "quantita": 100, "unita": "g" },
+        { "nome": "cannella", "quantita": 1, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 180,
+        "proteine": 5,
+        "carboidrati": 20,
+        "grassi": 12,
+        "fibre": 4,
+        "sodio": 10
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "momento_giornata": ["mattina", "pomeriggio"],
+      "tempo_preparazione": 5,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "SP002",
+      "nome": "Yogurt greco con frutti di bosco",
+      "ingredienti": [
+        { "nome": "yogurt greco", "quantita": 150, "unita": "g" },
+        { "nome": "frutti di bosco misti", "quantita": 100, "unita": "g" },
+        { "nome": "semi di chia", "quantita": 5, "unita": "g" },
+        { "nome": "miele", "quantita": 5, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 165,
+        "proteine": 12,
+        "carboidrati": 18,
+        "grassi": 7,
+        "fibre": 5,
+        "sodio": 45
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": "senza_miele",
+        "ipertesi": true
+      },
+      "momento_giornata": ["mattina", "pomeriggio"],
+      "tempo_preparazione": 5,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "SP003",
+      "nome": "Hummus con verdure crude",
+      "ingredienti": [
+        { "nome": "hummus", "quantita": 50, "unita": "g" },
+        { "nome": "carote", "quantita": 80, "unita": "g" },
+        { "nome": "sedano", "quantita": 50, "unita": "g" },
+        { "nome": "peperone", "quantita": 50, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 155,
+        "proteine": 6,
+        "carboidrati": 15,
+        "grassi": 8,
+        "fibre": 6,
+        "sodio": 120
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "momento_giornata": ["mattina", "pomeriggio"],
+      "tempo_preparazione": 10,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "SP004",
+      "nome": "Smoothie proteico verde",
+      "ingredienti": [
+        { "nome": "spinaci", "quantita": 30, "unita": "g" },
+        { "nome": "banana", "quantita": 80, "unita": "g" },
+        {
+          "nome": "proteine vegetali in polvere",
+          "quantita": 15,
+          "unita": "g"
+        },
+        { "nome": "latte di mandorle", "quantita": 150, "unita": "ml" },
+        { "nome": "semi di lino", "quantita": 5, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 185,
+        "proteine": 15,
+        "carboidrati": 22,
+        "grassi": 5,
+        "fibre": 6,
+        "sodio": 80
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "momento_giornata": ["mattina"],
+      "tempo_preparazione": 5,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "SP005",
+      "nome": "Bruschetta integrale con pomodoro",
+      "ingredienti": [
+        { "nome": "pane integrale", "quantita": 40, "unita": "g" },
+        { "nome": "pomodori", "quantita": 60, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 5, "unita": "ml" },
+        { "nome": "basilico", "quantita": 2, "unita": "g" },
+        { "nome": "aglio", "quantita": 1, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 170,
+        "proteine": 5,
+        "carboidrati": 25,
+        "grassi": 6,
+        "fibre": 4,
+        "sodio": 150
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["estate"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pane_senza_glutine",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "momento_giornata": ["mattina", "pomeriggio"],
+      "tempo_preparazione": 8,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "SP006",
+      "nome": "Cracker di lenticchie con crema di avocado",
+      "ingredienti": [
+        { "nome": "cracker di lenticchie", "quantita": 30, "unita": "g" },
+        { "nome": "avocado", "quantita": 50, "unita": "g" },
+        { "nome": "limone", "quantita": 2, "unita": "ml" },
+        { "nome": "semi di sesamo", "quantita": 3, "unita": "g" },
+        { "nome": "erba cipollina", "quantita": 2, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 175,
+        "proteine": 6,
+        "carboidrati": 15,
+        "grassi": 12,
+        "fibre": 5,
+        "sodio": 90
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "momento_giornata": ["mattina", "pomeriggio"],
+      "tempo_preparazione": 5,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "SP007",
+      "nome": "Frullato di frutta rossa e yogurt",
+      "ingredienti": [
+        { "nome": "frutti di bosco misti", "quantita": 100, "unita": "g" },
+        { "nome": "yogurt naturale", "quantita": 125, "unita": "g" },
+        { "nome": "fiocchi di avena", "quantita": 15, "unita": "g" },
+        { "nome": "miele", "quantita": 5, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 165,
+        "proteine": 8,
+        "carboidrati": 25,
+        "grassi": 4,
+        "fibre": 5,
+        "sodio": 50
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["estate", "autunno"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_avena_certificata",
+        "diabetici": "senza_miele",
+        "ipertesi": true
+      },
+      "momento_giornata": ["mattina", "pomeriggio"],
+      "tempo_preparazione": 5,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "SP008",
+      "nome": "Barretta energetica fatta in casa",
+      "ingredienti": [
+        { "nome": "datteri", "quantita": 30, "unita": "g" },
+        { "nome": "noci", "quantita": 20, "unita": "g" },
+        { "nome": "semi di zucca", "quantita": 10, "unita": "g" },
+        { "nome": "semi di girasole", "quantita": 10, "unita": "g" },
+        { "nome": "cacao amaro", "quantita": 5, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 180,
+        "proteine": 6,
+        "carboidrati": 20,
+        "grassi": 11,
+        "fibre": 4,
+        "sodio": 15
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": false,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": "limitare_datteri",
+        "ipertesi": true
+      },
+      "momento_giornata": ["mattina", "pomeriggio"],
+      "tempo_preparazione": 15,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "SP009",
+      "nome": "Edamame al vapore",
+      "ingredienti": [
+        { "nome": "edamame", "quantita": 100, "unita": "g" },
+        { "nome": "sale marino", "quantita": 1, "unita": "g" },
+        { "nome": "scorza di limone", "quantita": 1, "unita": "g" },
+        { "nome": "semi di sesamo nero", "quantita": 3, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 150,
+        "proteine": 12,
+        "carboidrati": 10,
+        "grassi": 6,
+        "fibre": 5,
+        "sodio": 120
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": "senza_sale"
+      },
+      "momento_giornata": ["pomeriggio"],
+      "tempo_preparazione": 10,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "SP010",
+      "nome": "Mini wrap di tacchino e verdure",
+      "ingredienti": [
+        { "nome": "piadina integrale piccola", "quantita": 40, "unita": "g" },
+        { "nome": "fesa di tacchino", "quantita": 30, "unita": "g" },
+        { "nome": "insalata", "quantita": 20, "unita": "g" },
+        { "nome": "pomodoro", "quantita": 30, "unita": "g" },
+        { "nome": "formaggio spalmabile light", "quantita": 20, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 190,
+        "proteine": 15,
+        "carboidrati": 20,
+        "grassi": 7,
+        "fibre": 3,
+        "sodio": 180
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": false,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_wrap_senza_glutine",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "momento_giornata": ["mattina", "pomeriggio"],
+      "tempo_preparazione": 5,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "SP011",
+      "nome": "Chips di cavolo nero",
+      "ingredienti": [
+        { "nome": "cavolo nero", "quantita": 50, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 5, "unita": "ml" },
+        { "nome": "sale marino", "quantita": 1, "unita": "g" },
+        { "nome": "pepe nero", "quantita": 1, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 145,
+        "proteine": 4,
+        "carboidrati": 8,
+        "grassi": 12,
+        "fibre": 4,
+        "sodio": 100
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": "senza_sale"
+      },
+      "momento_giornata": ["pomeriggio"],
+      "tempo_preparazione": 20,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "SP012",
+      "nome": "Palline energetiche al cacao",
+      "ingredienti": [
+        { "nome": "mandorle", "quantita": 30, "unita": "g" },
+        { "nome": "datteri", "quantita": 30, "unita": "g" },
+        { "nome": "cacao amaro", "quantita": 10, "unita": "g" },
+        { "nome": "semi di chia", "quantita": 5, "unita": "g" },
+        { "nome": "cocco grattugiato", "quantita": 5, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 185,
+        "proteine": 6,
+        "carboidrati": 22,
+        "grassi": 10,
+        "fibre": 5,
+        "sodio": 15
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": false,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": "limitare_datteri",
+        "ipertesi": true
+      },
+      "momento_giornata": ["mattina", "pomeriggio"],
+      "tempo_preparazione": 15,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "SP013",
+      "nome": "Budino di chia al cacao",
+      "ingredienti": [
+        { "nome": "semi di chia", "quantita": 20, "unita": "g" },
+        { "nome": "latte di mandorle", "quantita": 150, "unita": "ml" },
+        { "nome": "cacao amaro", "quantita": 5, "unita": "g" },
+        { "nome": "sciroppo d'acero", "quantita": 5, "unita": "g" },
+        { "nome": "lamponi", "quantita": 30, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 160,
+        "proteine": 6,
+        "carboidrati": 18,
+        "grassi": 9,
+        "fibre": 8,
+        "sodio": 40
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": "senza_sciroppo",
+        "ipertesi": true
+      },
+      "momento_giornata": ["mattina", "pomeriggio"],
+      "tempo_preparazione": 10,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "SP014",
+      "nome": "Spiedini di frutta e formaggio",
+      "ingredienti": [
+        { "nome": "mela", "quantita": 50, "unita": "g" },
+        { "nome": "pera", "quantita": 50, "unita": "g" },
+        { "nome": "formaggio primo sale", "quantita": 30, "unita": "g" },
+        { "nome": "noci", "quantita": 10, "unita": "g" },
+        { "nome": "miele", "quantita": 5, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 175,
+        "proteine": 8,
+        "carboidrati": 20,
+        "grassi": 9,
+        "fibre": 3,
+        "sodio": 120
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": "senza_miele",
+        "ipertesi": true
+      },
+      "momento_giornata": ["pomeriggio"],
+      "tempo_preparazione": 10,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "SP015",
+      "nome": "Toast di patata dolce",
+      "ingredienti": [
+        { "nome": "patata dolce", "quantita": 100, "unita": "g" },
+        { "nome": "avocado", "quantita": 30, "unita": "g" },
+        { "nome": "pomodorini", "quantita": 30, "unita": "g" },
+        { "nome": "semi di zucca", "quantita": 5, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 5, "unita": "ml" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 190,
+        "proteine": 4,
+        "carboidrati": 25,
+        "grassi": 10,
+        "fibre": 6,
+        "sodio": 70
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["autunno", "inverno"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": "porzione_ridotta",
+        "ipertesi": true
+      },
+      "momento_giornata": ["mattina", "pomeriggio"],
+      "tempo_preparazione": 15,
+      "difficolta": "media",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "SP016",
+      "nome": "Barchette di cetriolo con hummus",
+      "ingredienti": [
+        { "nome": "cetriolo", "quantita": 100, "unita": "g" },
+        { "nome": "hummus", "quantita": 40, "unita": "g" },
+        { "nome": "paprika", "quantita": 1, "unita": "g" },
+        { "nome": "semi di sesamo", "quantita": 3, "unita": "g" },
+        { "nome": "erba cipollina", "quantita": 2, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 140,
+        "proteine": 6,
+        "carboidrati": 12,
+        "grassi": 8,
+        "fibre": 4,
+        "sodio": 150
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["primavera", "estate"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "momento_giornata": ["pomeriggio"],
+      "tempo_preparazione": 10,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "SP017",
+      "nome": "Frullato proteico al caffè",
+      "ingredienti": [
+        { "nome": "proteine in polvere", "quantita": 20, "unita": "g" },
+        { "nome": "caffè espresso", "quantita": 30, "unita": "ml" },
+        { "nome": "latte di mandorle", "quantita": 150, "unita": "ml" },
+        { "nome": "banana", "quantita": 50, "unita": "g" },
+        { "nome": "cacao amaro", "quantita": 5, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 170,
+        "proteine": 18,
+        "carboidrati": 15,
+        "grassi": 6,
+        "fibre": 3,
+        "sodio": 80
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "momento_giornata": ["mattina"],
+      "tempo_preparazione": 5,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "SP018",
+      "nome": "Crostini di pane di segale con salmone",
+      "ingredienti": [
+        { "nome": "pane di segale", "quantita": 40, "unita": "g" },
+        { "nome": "salmone affumicato", "quantita": 30, "unita": "g" },
+        { "nome": "avocado", "quantita": 30, "unita": "g" },
+        { "nome": "aneto", "quantita": 1, "unita": "g" },
+        { "nome": "pepe nero", "quantita": 1, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 195,
+        "proteine": 12,
+        "carboidrati": 18,
+        "grassi": 10,
+        "fibre": 4,
+        "sodio": 200
+      },
+      "proprieta": {
+        "vegano": false,
+        "vegetariano": false,
+        "senza_glutine": false,
+        "basso_sodio": false,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_pane_senza_glutine",
+        "diabetici": true,
+        "ipertesi": "porzione_ridotta"
+      },
+      "momento_giornata": ["mattina", "pomeriggio"],
+      "tempo_preparazione": 5,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "SP019",
+      "nome": "Mix di verdure al forno",
+      "ingredienti": [
+        { "nome": "carote", "quantita": 50, "unita": "g" },
+        { "nome": "zucchine", "quantita": 50, "unita": "g" },
+        { "nome": "peperoni", "quantita": 50, "unita": "g" },
+        { "nome": "olio extravergine d'oliva", "quantita": 5, "unita": "ml" },
+        { "nome": "rosmarino", "quantita": 2, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 130,
+        "proteine": 3,
+        "carboidrati": 15,
+        "grassi": 7,
+        "fibre": 5,
+        "sodio": 60
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": true,
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "momento_giornata": ["pomeriggio"],
+      "tempo_preparazione": 20,
+      "difficolta": "facile",
+      "porzioni": 1
+    },
+    {
+      "id_pasto": "SP020",
+      "nome": "Yogurt di soia con granola proteica",
+      "ingredienti": [
+        { "nome": "yogurt di soia", "quantita": 150, "unita": "g" },
+        { "nome": "granola proteica", "quantita": 20, "unita": "g" },
+        { "nome": "frutti rossi", "quantita": 30, "unita": "g" },
+        { "nome": "semi di girasole", "quantita": 5, "unita": "g" },
+        { "nome": "cannella", "quantita": 1, "unita": "g" }
+      ],
+      "valori_nutrizionali": {
+        "calorie": 180,
+        "proteine": 12,
+        "carboidrati": 20,
+        "grassi": 8,
+        "fibre": 5,
+        "sodio": 70
+      },
+      "proprieta": {
+        "vegano": true,
+        "vegetariano": true,
+        "senza_glutine": true,
+        "basso_sodio": true,
+        "adatto_diabetici": true,
+        "stagione": ["tutte"]
+      },
+      "adattabile_per": {
+        "celiaci": "con_granola_certificata",
+        "diabetici": true,
+        "ipertesi": true
+      },
+      "momento_giornata": ["mattina", "pomeriggio"],
+      "tempo_preparazione": 5,
+      "difficolta": "facile",
+      "porzioni": 1
+    }
+  ]
+}

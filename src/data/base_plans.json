@@ -1,0 +1,56 @@
+{
+  "VE-WL": {
+    "colazioni": ["COL001", "COL006", "COL008", "COL010", "COL013", "COL016"],
+    "pranzi": ["PR002", "PR006", "PR009", "PR014", "PR016", "PR030"],
+    "cene": ["CE003", "CE005", "CE008", "CE019", "CE022", "CE032"],
+    "spuntini": ["SP001", "SP003", "SP004", "SP016", "SP019"]
+  },
+  "VE-M": {
+    "colazioni": ["COL001", "COL008", "COL010", "COL013", "COL016", "COL025"],
+    "pranzi": ["PR002", "PR006", "PR009", "PR014", "PR018", "PR030"],
+    "cene": ["CE003", "CE005", "CE008", "CE019", "CE022", "CE032"],
+    "spuntini": ["SP001", "SP003", "SP004", "SP016", "SP019"]
+  },
+  "VE-MG": {
+    "colazioni": ["COL001", "COL008", "COL010", "COL012", "COL013", "COL016"],
+    "pranzi": ["PR002", "PR006", "PR009", "PR014", "PR016", "PR030"],
+    "cene": ["CE003", "CE005", "CE008", "CE019", "CE022", "CE032"],
+    "spuntini": ["SP001", "SP003", "SP004", "SP016", "SP019"]
+  },
+  "V-WL": {
+    "colazioni": ["COL002", "COL003", "COL004", "COL007", "COL011", "COL021"],
+    "pranzi": ["PR002", "PR006", "PR008", "PR009", "PR014", "PR030"],
+    "cene": ["CE002", "CE005", "CE019", "CE022", "CE030", "CE032"],
+    "spuntini": ["SP002", "SP003", "SP014", "SP016", "SP019"]
+  },
+  "V-M": {
+    "colazioni": ["COL002", "COL003", "COL004", "COL007", "COL011", "COL021"],
+    "pranzi": ["PR002", "PR006", "PR008", "PR009", "PR014", "PR030"],
+    "cene": ["CE002", "CE005", "CE019", "CE022", "CE030", "CE032"],
+    "spuntini": ["SP002", "SP003", "SP014", "SP016", "SP019"]
+  },
+  "V-MG": {
+    "colazioni": ["COL002", "COL003", "COL004", "COL007", "COL011", "COL021"],
+    "pranzi": ["PR002", "PR006", "PR008", "PR009", "PR014", "PR030"],
+    "cene": ["CE002", "CE005", "CE019", "CE022", "CE030", "CE032"],
+    "spuntini": ["SP002", "SP003", "SP014", "SP016", "SP019"]
+  },
+  "S-WL": {
+    "colazioni": ["COL002", "COL003", "COL004", "COL007", "COL015", "COL021"],
+    "pranzi": ["PR001", "PR003", "PR005", "PR007", "PR011", "PR013"],
+    "cene": ["CE001", "CE002", "CE004", "CE006", "CE013", "CE027"],
+    "spuntini": ["SP002", "SP005", "SP010", "SP014", "SP018"]
+  },
+  "S-M": {
+    "colazioni": ["COL002", "COL003", "COL004", "COL007", "COL015", "COL021"],
+    "pranzi": ["PR001", "PR003", "PR005", "PR007", "PR011", "PR013"],
+    "cene": ["CE001", "CE002", "CE004", "CE006", "CE013", "CE027"],
+    "spuntini": ["SP002", "SP005", "SP010", "SP014", "SP018"]
+  },
+  "S-MG": {
+    "colazioni": ["COL002", "COL003", "COL004", "COL007", "COL015", "COL021"],
+    "pranzi": ["PR001", "PR003", "PR005", "PR007", "PR011", "PR013"],
+    "cene": ["CE001", "CE002", "CE004", "CE006", "CE013", "CE027"],
+    "spuntini": ["SP002", "SP005", "SP010", "SP014", "SP018"]
+  }
+}

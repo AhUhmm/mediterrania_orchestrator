@@ -3,7 +3,8 @@ from setuptools import setup, find_packages
 setup(
     name="mediterrania_orchestrator",
     version="0.1",
-    packages=find_packages(),
+    packages=find_packages(where='src'),
+    package_dir={'': 'src'},  # Set the base directory to 'src'
     install_requires=[
         'numpy>=1.21.0',
         'pandas>=1.3.0',
@@ -12,7 +13,7 @@ setup(
     author="Federico Peliti",
     author_email="",
     description="Un orchestratore per la creazione di piani alimentari personalizzati",
-    long_description=open("README.md").read(),
+    #long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/AhUhmm/mediterrania_orchestrator",
     classifiers=[

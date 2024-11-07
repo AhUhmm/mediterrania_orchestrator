@@ -1,3 +1,7 @@
+import sys
+sys.path.insert(0, "../../src")
+print(sys.path)  # Verify that 'src' is in the path
+
 from mediterrania_orchestrator.core.orchestrator import OrchestratoreAlimentare
 
 def main():

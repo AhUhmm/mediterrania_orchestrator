@@ -2,6 +2,7 @@ import logging
 import logging.handlers
 from datetime import datetime
 import os
+from typing import Dict, List, Optional
 
 class LoggerMediterranIA:
     def __init__(self):

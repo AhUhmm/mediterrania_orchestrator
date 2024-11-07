@@ -1,0 +1,9 @@
+2024-11-07 15:32:58,193 - MediterranIA - ERROR - Errore in creazione_piano_personalizzato: [Errno 2] No such file or directory: 'src/data/base_plans.json'
+Traceback (most recent call last):
+  File "C:\Users\feder\Documents\@_work\mediterrania_orchestrator\tools\example\../../src\mediterrania_orchestrator\core\orchestrator.py", line 27, in crea_piano_personalizzato
+    piano_base = self.piani_base[tipo_piano]
+                 ^^^^^^^^^^^^^^^
+  File "C:\Users\feder\Documents\@_work\mediterrania_orchestrator\tools\example\../../src\mediterrania_orchestrator\core\orchestrator.py", line 118, in piani_base
+    with open("src/data/base_plans.json", "r", encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'src/data/base_plans.json'

@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Dict, List, Optional
 import math
-from ..database.database_handler import DatabaseRicette
+from mediterrania_orchestrator.database.database_handler import DatabaseRicette
 
 @dataclass
 class RequisitiNutrizionali:
@@ -53,8 +53,7 @@ class VerificatoreNutrizionale:
 
     def verifica_bilanciamento(self, piano: Dict, dati_utente: Dict) -> Dict:
         """
-        Verifica il bilanciamento nutrizionale del piano
-        Restituisce un dizionario con i risultati della verifica
+        Verifica il bilanciamento nutrizionale del piano con logging dettagliato
         """
         requisiti = self.calcola_requisiti(dati_utente)
         totali_giornalieri = self._calcola_totali_giornalieri(piano)
@@ -63,46 +62,53 @@ class VerificatoreNutrizionale:
             "bilanciato": True,
             "problemi": [],
             "valori_attuali": totali_giornalieri,
-            "requisiti": requisiti
+            "requisiti": requisiti,
+            "analisi_dettagliata": {}  # Nuovo campo per l'analisi dettagliata
         }
 
-        # Verifica calorie
-        if not (requisiti.calorie_min <= totali_giornalieri["calorie"] <= requisiti.calorie_max):
-            risultati["bilanciato"] = False
-            risultati["problemi"].append(
-                f"Calorie fuori range: {totali_giornalieri['calorie']:.1f} kcal " +
-                f"(range: {requisiti.calorie_min:.1f}-{requisiti.calorie_max:.1f})"
+        # Per ogni nutriente, calcola e logga la deviazione dal target
+        for nutriente in ["calorie", "proteine", "carboidrati", "grassi"]:
+            valore = totali_giornalieri[nutriente]
+            min_val = getattr(requisiti, f"{nutriente}_min")
+            max_val = getattr(requisiti, f"{nutriente}_max")
+            target = (min_val + max_val) / 2
+            
+            # Calcola la deviazione percentuale dal target
+            deviazione_perc = ((valore - target) / target) * 100
+            
+            # Prepara l'analisi dettagliata
+            analisi = {
+                "valore_attuale": valore,
+                "target": target,
+                "deviazione_percentuale": deviazione_perc,
+                "range_min": min_val,
+                "range_max": max_val,
+                "dentro_range": min_val <= valore <= max_val
+            }
+            
+            risultati["analisi_dettagliata"][nutriente] = analisi
+            
+            # Logga l'analisi
+            self.logger.log_info(
+                f"{nutriente.capitalize()}: "
+                f"{valore:.1f} ({deviazione_perc:+.1f}% dal target) "
+                f"[range: {min_val:.1f}-{max_val:.1f}]"
             )
 
-        # Verifica proteine
-        if not (requisiti.proteine_min <= totali_giornalieri["proteine"] <= requisiti.proteine_max):
-            risultati["bilanciato"] = False
-            risultati["problemi"].append(
-                f"Proteine fuori range: {totali_giornalieri['proteine']:.1f}g " +
-                f"(range: {requisiti.proteine_min:.1f}-{requisiti.proteine_max:.1f})"
-            )
+            # Aggiungi problemi se fuori range
+            if not analisi["dentro_range"]:
+                risultati["bilanciato"] = False
+                risultati["problemi"].append(
+                    f"{nutriente.capitalize()} fuori range: "
+                    f"{valore:.1f} ({deviazione_perc:+.1f}% dal target) "
+                    f"[range: {min_val:.1f}-{max_val:.1f}]"
+                )
 
-        # Verifica carboidrati
-        if not (requisiti.carboidrati_min <= totali_giornalieri["carboidrati"] <= requisiti.carboidrati_max):
-            risultati["bilanciato"] = False
-            risultati["problemi"].append(
-                f"Carboidrati fuori range: {totali_giornalieri['carboidrati']:.1f}g " +
-                f"(range: {requisiti.carboidrati_min:.1f}-{requisiti.carboidrati_max:.1f})"
-            )
-
-        # Verifica grassi
-        if not (requisiti.grassi_min <= totali_giornalieri["grassi"] <= requisiti.grassi_max):
-            risultati["bilanciato"] = False
-            risultati["problemi"].append(
-                f"Grassi fuori range: {totali_giornalieri['grassi']:.1f}g " +
-                f"(range: {requisiti.grassi_min:.1f}-{requisiti.grassi_max:.1f})"
-            )
-
-        # Verifica fibre
+        # Verifica fibre come prima
         if totali_giornalieri["fibre"] < requisiti.fibre_min:
             risultati["bilanciato"] = False
             risultati["problemi"].append(
-                f"Fibre insufficienti: {totali_giornalieri['fibre']:.1f}g " +
+                f"Fibre insufficienti: {totali_giornalieri['fibre']:.1f}g "
                 f"(minimo: {requisiti.fibre_min:.1f})"
             )
 
@@ -120,8 +126,10 @@ class VerificatoreNutrizionale:
             "fibre": 0
         }
 
+        # Take the first recipe for each meal type as a sample daily plan
         for tipo_pasto, ricette in piano.items():
-            for id_ricetta in ricette:
+            if ricette:  # Check if there are any recipes
+                id_ricetta = ricette[0]  # Take just the first recipe
                 ricetta = self.db.get_ricetta_by_id(id_ricetta)
                 if ricetta:
                     valori = ricetta["valori_nutrizionali"]

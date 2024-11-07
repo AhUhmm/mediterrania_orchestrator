@@ -2,9 +2,13 @@ from setuptools import setup, find_packages
 
 setup(
     name="mediterrania_orchestrator",
-    version="0.1",
-    packages=find_packages(where='src'),
+    version="0.1.0",
     package_dir={'': 'src'},  # Set the base directory to 'src'
+    packages=find_packages(where='src'),
+    package_data={
+        'mediterrania_orchestrator': ['data/*.json'],
+    },
+    include_package_data=True,
     install_requires=[
         'numpy>=1.21.0',
         'pandas>=1.3.0',

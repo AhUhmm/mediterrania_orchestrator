@@ -1,9 +1,11 @@
 import json
-from typing import Dict, List
-from ..database.database_handler import DatabaseRicette
-from ..utils.logger import LoggerMediterranIA
-from .nutritional_verifier import VerificatoreNutrizionale
-from .substitution_handler import GestoreSostituzioni
+import os
+from pathlib import Path
+from typing import Dict, List, Optional
+from mediterrania_orchestrator.database.database_handler import DatabaseRicette
+from mediterrania_orchestrator.utils.logger import LoggerMediterranIA
+from mediterrania_orchestrator.core.nutritional_verifier import VerificatoreNutrizionale
+from mediterrania_orchestrator.core.substitution_handler import GestoreSostituzioni
 
 class OrchestratoreAlimentare:
     def __init__(self):
@@ -116,6 +118,15 @@ class OrchestratoreAlimentare:
         Carica i piani base dal file JSON
         """
         if not hasattr(self, '_piani_base'):
-            with open("src/data/base_plans.json", "r", encoding="utf-8") as f:
-                self._piani_base = json.load(f)
+            # Get the absolute path to the package directory
+            package_dir = Path(__file__).parent.parent.parent
+            path = package_dir / "data" / "base_plans.json"
+            
+            try:
+                with open(path, "r", encoding="utf-8") as f:
+                    self._piani_base = json.load(f)
+            except FileNotFoundError:
+                self.logger.log_errore(f"File base_plans.json non trovato in: {path}", "caricamento_piani_base")
+                raise
+                
         return self._piani_base

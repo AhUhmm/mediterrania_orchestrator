@@ -1,7 +1,7 @@
 from typing import Dict, List, Set, Optional
 from dataclasses import dataclass
 from datetime import datetime
-from ..database.database_handler import DatabaseRicette
+from mediterrania_orchestrator.database.database_handler import DatabaseRicette
 
 @dataclass
 class SostituzionePasto:
@@ -43,8 +43,14 @@ class GestoreSostituzioni:
             for id_ricetta in ricette:
                 ricetta = self.db.get_ricetta_by_id(id_ricetta)
                 
+                if ricetta is None:
+                    continue  # Skip recipes that don't exist
+                    
+                # Get ingredient names from the ingredients list
+                ingredienti = [ing["nome"] for ing in ricetta["ingredienti"]]
+                
                 # Controlla se la ricetta contiene verdure escluse
-                if any(verdura in ricetta["ingredienti"] for verdura in verdure_escluse):
+                if any(verdura in ingredienti for verdura in verdure_escluse):
                     # Trova una ricetta sostitutiva
                     sostituzione = self._trova_sostituzione_ricetta(
                         ricetta,
@@ -60,7 +66,7 @@ class GestoreSostituzioni:
             piano_modificato[tipo_pasto] = ricette_sostituite
             
         return piano_modificato, sostituzioni
-        
+    
     def sostituisci_latte(self, piano: Dict, preferenza_latte: str) -> Dict:
         """
         Sostituisce le ricette che contengono latte con alternative vegetali
@@ -100,17 +106,18 @@ class GestoreSostituzioni:
         ricette_compatibili = []
         
         for id_ricetta, candidato in self.db.ricette_per_id.items():
+            ingredienti_candidato = [ing["nome"] for ing in candidato["ingredienti"]]
             if (candidato["id_pasto"].startswith(tipo_pasto) and
-                not any(verdura in candidato["ingredienti"] for verdura in verdure_escluse) and
+                not any(verdura in ingredienti_candidato for verdura in verdure_escluse) and
                 self._valori_nutrizionali_simili(ricetta, candidato)):
                 ricette_compatibili.append(candidato)
                 
         if ricette_compatibili:
             # Sceglie la ricetta più simile nutrizionalmente
             sostituto = min(ricette_compatibili, 
-                          key=lambda x: abs(x["valori_nutrizionali"]["calorie"] - 
-                                          ricetta["valori_nutrizionali"]["calorie"]))
-                                          
+                        key=lambda x: abs(x["valori_nutrizionali"]["calorie"] - 
+                                        ricetta["valori_nutrizionali"]["calorie"]))
+                                        
             return SostituzionePasto(
                 ricetta_originale=ricetta["id_pasto"],
                 ricetta_sostitutiva=sostituto["id_pasto"],

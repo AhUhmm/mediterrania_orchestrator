@@ -21,6 +21,10 @@ def main():
         "preferenza_latte": "soia"
     }
     
+    # BMI check
+    bmi = dati_utente["peso"] / ((dati_utente["altezza"] / 100) ** 2)
+    print(f"DEBUG - BMI calcolato: {bmi:.1f}")
+
     try:
         # Genera piano personalizzato
         piano = orchestratore.crea_piano_personalizzato(dati_utente)
